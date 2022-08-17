@@ -1,0 +1,47 @@
+.SettingsPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.settingspage_header{
+    width: 100%;
+}
+.settingspage_content{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    border-top: 3px solid #E3F5FE;
+}
+.settingspage_SettingsSession{
+    flex-grow: 1;
+    height: 100%;
+    background-color: #061726;
+}
+
+@media only screen and (min-width: 900px) {
+    .settingspage_header{
+        min-height: 180px;
+    }
+    .settingspage_content{
+        flex-direction: row;
+    }
+    .settingspage_profile{
+        width: 300px;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .settingspage_header{
+        min-height: 100px;
+    }
+    .settingspage_content{
+        flex-direction: column;
+    }
+    .settingspage_profile{
+        width: 100%;
+        height: 120px;
+    }
+}
+

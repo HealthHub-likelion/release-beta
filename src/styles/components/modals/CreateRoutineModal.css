@@ -1,0 +1,84 @@
+.create_routine_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.create_routine_header > input{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #999999;
+    width: 200px;
+    padding: 2px 5px;
+}
+
+.create_routine_header > div{
+    border: 2px solid #2E61D7;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.create_routine_state_click, .create_routine_state_unclick{
+    font-size: 13px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 500;
+    height: 100%;
+    width: 50%;
+}
+.create_routine_state_click{
+    color: white;
+    background-color: #2E61D7;
+}
+.create_routine_state_unclick{
+    color: #2E61D7;
+    background-color: transparent;
+}
+
+.create_routine_body{
+    padding: 15px 20px;
+    max-height: 400px;
+    overflow: scroll;
+}
+.create_add_exercise{
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 0;
+    border-radius: 7px;
+    border: 2px solid #2E61D7;
+    color: #2E61D7;
+    font-weight: 700;
+}
+
+
+.create_routine_footer{
+    padding: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.create_routine_footer_left{
+    font-size: 16px;
+    padding: 3px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 2px solid #2E61D7;
+    color: #2E61D7;
+}
+.create_routine_footer_right{
+    font-size: 16px;
+    padding: 3px;
+    margin-left: 5px;
+    background-color: #2E61D7;
+    border: #2E61D7;
+    color: white;
+}
+.create_routine_footer > button{
+    outline: none;
+    border-radius: 7px;
+    font-weight: 600;
+}

@@ -1,0 +1,39 @@
+.Wave { 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.ocean { 
+    height:100%;
+    width:100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.wave_element {
+    position: absolute;
+    width: 500%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave_element {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+}
+}

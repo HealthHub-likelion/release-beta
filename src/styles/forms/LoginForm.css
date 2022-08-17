@@ -1,0 +1,85 @@
+.LoginForm{
+    display : flex;
+    flex-direction: column;
+    color : #E3F5FE;
+    margin : 150px 0 0 0 ;
+    font-size: 20px;
+}
+.loginform_email{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E3F5FE;
+    padding-bottom: 5px;
+    margin : auto;
+    margin-bottom : 10px;
+}
+.loginform_email > input{
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    color : #E3F5FE;
+    font-size: 20px;
+}
+.loginform_email > input:focus{
+    outline:none;
+}
+.loginform_password{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #E3F5FE;
+    padding-bottom: 5px;
+    color : #E3F5FE;
+    margin : auto;
+    margin-bottom : 10px;
+    font-size: 20px;
+}
+.loginform_password:focus{
+    outline:none;
+}
+.loginform_login{
+    margin : 20px auto;
+    color : #66B3F9;
+    font-size : 25px;
+}
+
+@media only screen and (min-width: 900px) {
+    .loginform_nickname{
+        width : 300px;
+    }
+    .loginform_nickname > input{
+        width : 240px;
+    }
+    .loginform_email{
+        width : 300px;
+    }
+    .loginform_email > input{
+        width : 240px;
+    }
+    .loginform_password{
+        width : 300px;
+    }
+    .loginform_doubleCheck{
+        width : 300px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .loginform_nickname{
+        width : 250px;
+    }
+    .loginform_nickname > input{
+        width : 195px;
+    }
+    .loginform_email{
+        width : 250px;
+    }
+    .loginform_email > input{
+        width : 195px;
+    }
+    .loginform_password{
+        width : 250px;
+    }
+    .loginform_doubleCheck{
+        width : 250px;
+    }
+}

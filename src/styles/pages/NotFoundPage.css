@@ -1,0 +1,120 @@
+.NotFoundPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.NotFoundContainer{
+    margin : 50px auto;
+    height : 250px;
+    color : white;
+    display : flex;
+    flex-direction: column;
+}
+.notFound_top{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.notFound_top_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.notFound_top_searchBox{
+    margin-top : 20px;
+    margin-right: 20px;
+    border: 1px solid #878787;
+    padding: 3px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    height: 35px;
+}
+.notFound_top_searchBox > input{
+    width: 200px;
+    margin-right: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: rgb(186, 186, 186);
+}
+.notFound_top_searchBox > img{
+    height: 15px;
+}
+.notFound_top_search_dropdown{
+    position: absolute;
+    width: 248px;
+    border-radius: 3px;
+    min-height: 100px;
+    background-color: #10273B;
+    top: 56px;
+    margin-left: 5px;
+    z-index: 2;
+    color : white;
+}
+.notFound_box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 30px 0 0;
+}
+.notFound_logo_left{
+    color: #E3F5FE;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.notFound_logo_right{
+    color: #66B3F9;
+    margin-left: 3px;
+    font-size: 18px;
+}
+.notFound_userList{
+    display : flex;
+    height : 40px;
+    border-bottom: 2px solid #264056;
+}
+.notFound_userImgContainer{
+    width : 25px;
+    height : 25px;
+    margin : auto 10px;
+}
+.notFound_userImg{
+    display : block;
+    width : 100%;
+    height : 25px;
+    border-radius: 15px;
+    border : none;
+}
+.notFound_userName{
+    margin : auto 10px;
+    margin-left : 5px;
+    font-size: 20px;
+}
+@media only screen and (min-width: 900px) {
+    .NotFound_404{
+        font-size: 125px;
+        text-align: center;
+        height: 150px;
+    }
+    .NotFound_alert{
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .NotFound_404{
+        font-size: 100px;
+        text-align: center;
+        height: 125px;
+    }
+    .NotFound_alert{
+        font-size: 23px;
+        text-align: center;
+    }
+}

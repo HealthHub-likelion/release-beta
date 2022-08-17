@@ -1,0 +1,17 @@
+.ProfileSession{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 900px) {
+    .profilesession_profile{
+        position: absolute;
+        left: 25px;
+        top: 55px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .profilesession_profile{
+        display: flex;
+        flex-direction: row;
+    }
+}

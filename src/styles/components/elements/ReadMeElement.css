@@ -1,0 +1,45 @@
+.ReadMeElement{
+    width: 100%;
+}
+
+.readme_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #264056;
+}
+.readme_header_title{
+    color: #66B3F9;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.readme_header > img{
+    height: 25px;
+}
+
+.ReadmeText{
+    width: 100%;
+    max-height: 250px;
+    padding: 8px 5px;
+}
+
+.update_buttongroup{
+    display: flex;
+    flex-direction: row;
+    color: #E3F5FE;
+    font-size: 18px;
+    font-weight: 500;
+    width: 105px;
+    justify-content: space-between;
+}
+.update_buttongroup > div{
+    padding: 5px 10px;
+}
+.update_buttongroup > div:hover{
+    background-color: #264056;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

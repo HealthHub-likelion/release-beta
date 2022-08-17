@@ -1,0 +1,15 @@
+.ElementProfileBox{
+    display: flex;
+    padding : 15px 10px;
+}
+.waveElement_profileName{
+    height : 30px;
+    line-height: 30px;
+    font-size : 15px;
+}
+.waveElement_profileImgBox{
+    width : 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right : 10px;
+}

@@ -1,0 +1,189 @@
+.edit_routine_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.edit_routine_header > input{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #999999;
+    width: 200px;
+    padding: 2px 5px;
+}
+
+.edit_routine_header > div{
+    border: 2px solid #2E61D7;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.edit_routine_state_click, .edit_routine_state_unclick{
+    font-size: 13px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 500;
+    height: 100%;
+    width: 50%;
+}
+.edit_routine_state_click{
+    color: white;
+    background-color: #2E61D7;
+}
+.edit_routine_state_unclick{
+    color: #2E61D7;
+    background-color: transparent;
+}
+
+.edit_add_exercise {
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 0;
+    border-radius: 7px;
+    border: 2px solid #2E61D7;
+    color: #2E61D7;
+    font-weight: 700;
+}
+
+.edit_routine_body{
+    padding: 15px;
+    max-height: 400px;
+    overflow: scroll;
+}
+.edit_exercise_box{
+    margin: 15px 0;
+}
+.edit_exercise_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #dfdfdf;
+    padding: 10px 10px;
+}
+.edit_exercise_title_en{
+    color: #2E61D7;
+    font-weight: 700;
+    font-size: 18px;
+}
+.edit_exercise_title_kr{
+    color: #4f4f4f;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.edit_exercise_column{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #dfdfdf;
+    text-align: center;
+}
+
+.edit_exercise_set_box{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.edit_exercise_set_box > div > input{
+    width: 60px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+}
+
+.edit_exercise_top > button{
+    border: 1.5px solid #2E61D7;
+    color: #2E61D7;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 31px;
+    padding: 0 10px;
+    width: 60px;
+}
+.edit_exercise_top > button:hover{
+    border: 1.5px solid #ff6600;
+    color: #ff6600;
+}
+.edit_exercise_set_box > div > button{
+    border: 1.5px solid #9a9a9a;
+    color: #9a9a9a;
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 28px;
+    width: 50px;
+}
+.edit_exercise_set_box > div > button:hover{
+    border: 1.5px solid #ff6600;
+    color: #ff6600;
+}
+
+.edit_add_set{
+    width: 100%;
+    padding: 10px 30px;
+}
+.edit_add_set > button{
+    width: 100%;
+    border: none;
+    background-color: #2E61D7;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.edit_routine_footer{
+    padding: 20px 20px 0 20px;
+    border-top: 2px solid rgb(209, 209, 209);
+}
+.edit_routine_footer > button{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 3px;
+    background-color: transparent;
+    border: 2px solid rgb(174, 174, 174);
+    color: rgb(128, 128, 128);
+}
+.edit_routine_footer > button:hover{
+    border: 2px solid rgb(255, 30, 0);
+    color: rgb(255, 30, 0);
+}
+.edit_routine_footer > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.edit_routine_footer_left{
+    font-size: 16px;
+    padding: 3px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 2px solid #2E61D7;
+    color: #2E61D7;
+}
+.edit_routine_footer_right{
+    font-size: 16px;
+    padding: 3px;
+    margin-left: 5px;
+    background-color: #2E61D7;
+    border: #2E61D7;
+    color: white;
+}
+
+.edit_routine_footer > button, .edit_routine_footer_left, .edit_routine_footer_right{
+    outline: none;
+    border-radius: 7px;
+    font-weight: 600;
+}

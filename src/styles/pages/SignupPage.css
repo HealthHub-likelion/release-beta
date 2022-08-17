@@ -1,0 +1,21 @@
+.SignupPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.signup_form{
+    width : 100%;
+    height : 50%;
+}
+.signup_bottom{
+    margin : auto;
+    color : #E3F5FE;
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .signup_bottom{
+        font-size : 20px;
+    }
+}

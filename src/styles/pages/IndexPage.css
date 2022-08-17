@@ -1,0 +1,58 @@
+.IndexPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.index_top{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index_header_userSearch{
+    display : flex;
+    justify-content: flex-end;
+}
+.index_top_title{
+    display: flex;
+    flex-direction: row;
+    font-size: 80px;
+    font-weight: bold;
+}
+.index_top_title_right{
+    color: #E3F5FE;
+    margin-right: 30px;
+}
+.index_top_title_left{
+    color: #66B3F9;
+}
+.index_top_slogan{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #c8d9e1;
+}
+
+.index_bottom{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.index_loing_button{
+    margin-right: 120px;
+}
+.index_loing_button, .index_signup_button:hover, .index_signup_button, .index_loing_button:hover{
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+.index_loing_button, .index_signup_button:hover{
+    color: #E3F5FE;
+}
+.index_signup_button, .index_loing_button:hover{
+    color: #66B3F9;
+}

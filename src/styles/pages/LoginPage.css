@@ -1,0 +1,19 @@
+.LoginPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login_form{
+    width : 100%;
+    height : 40%;
+}
+.login_bottom{
+    margin : auto;
+}
+.login_bottom_button{
+    font-size: 25px;
+    color : #E3F5FE;
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,80 @@
+.WavesElement{
+    width: 100%;
+}
+
+.wave_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #264056;
+    color: #66B3F9;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.wave_content{
+    width: 100%;
+    height: 250px;
+}
+.wave_Wave{
+    height: 100%;
+}
+
+.wave_date{
+    margin-top: 15px;
+}
+
+.wave_date_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(215, 215, 215);
+    margin: 3px 5px;
+    font-size: 15px;
+}
+
+.wave_plate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+    width: 20px;
+    height: 20px;
+    margin: 1px 2.5px;
+    border-radius: 4px;
+}
+.wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+    width: 15px;
+    height: 15px;
+    margin: 1px 2px;
+    border-radius: 3px;
+}
+.wave_none_box, .wave_state_none_box{
+    background-color: #10273B;
+}
+.wave_1lv_box, .wave_state_1lv_box{
+    background-color: #2E61D7;
+}
+.wave_2lv_box, .wave_state_2lv_box{
+    background-color: #66B3F9;
+}
+.wave_3lv_box, .wave_state_3lv_box{
+    background-color: #E3F5FE;
+}
+
+.wave_date_state_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+.wave_date_sate_info_content{
+    color: rgb(215, 215, 215);;
+    font-size: 15px;
+    margin: 0 5px
+}

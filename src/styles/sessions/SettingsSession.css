@@ -1,0 +1,8 @@
+.SettingsSession{
+    width: 100%;
+    height: 100%;
+}
+.settingssession_nickname, .settingssession_profileimage,
+.settingssession_security, .settingssession_status{
+    padding: 80px 120px 60px 120px;
+}

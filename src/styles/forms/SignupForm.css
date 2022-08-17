@@ -1,0 +1,147 @@
+.SignupForm{
+    display : flex;
+    flex-direction: column;
+    color : #E3F5FE;
+    margin : 100px 0 0 0 ;
+    font-size: 20px;
+}
+.signupForm_nickname{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E3F5FE;
+    padding-bottom: 5px;
+    margin : auto;
+    margin-bottom : 20px;
+    padding : 0 5px;
+}
+.signupForm_nickname > input{
+    border : none;
+    background: transparent;
+    width : 240px;
+    color : #E3F5FE;
+    font-size: 20px;
+    padding-bottom : 5px;
+}
+.signupForm_nickname > input:focus{
+    outline:none;
+}
+.signupForm_email{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E3F5FE;
+    padding-bottom: 5px;
+    margin : auto;
+    margin-bottom : 15px;
+    padding : 0 5px;
+}
+.signupForm_email > input{
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    color : #E3F5FE;
+    font-size: 20px;
+    padding-bottom : 5px;
+}
+.signupForm_email > input:focus{
+    outline:none;
+}
+.singupForm_password{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #E3F5FE;
+    padding : 0 5px;
+    padding-bottom: 5px;
+    color : #E3F5FE;
+    margin : auto;
+    margin-bottom : 10px;
+    font-size: 20px;
+}
+.singupForm_password:focus{
+    outline:none;
+}
+.signupForm_doubleCheck{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #E3F5FE;
+    padding : 0 5px;
+    padding-bottom: 5px;
+    color : #E3F5FE;
+    margin : auto;
+    margin-bottom : 10px;
+    font-size: 20px;
+}
+.signupForm_doubleCheck:focus{
+    outline:none;
+}
+.signupForm_signup{
+    margin : 20px auto;
+    color : #66B3F9;
+    font-size : 25px;
+}
+.signupForm_passwordAlert{
+    font-size: 15px;
+    color :#FF9900;
+}
+.signupForm_passwordAlertBox{
+    margin : auto;
+    padding-bottom : 5px;
+}
+
+@media only screen and (min-width: 900px) {
+    .signupForm_nickname{
+        width : 350px;
+    }
+    .signupForm_nickname > input{
+        width : 280px;
+    }
+    .signupForm_email{
+        width : 350px;
+    }
+    .signupForm_email > input{
+        width : 280px;
+    }
+    .singupForm_password{
+        width : 350px;
+    }
+    .signupForm_doubleCheck{
+        width : 350px;
+    }
+    .signupForm_passwordAlertBox{
+        width : 350px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .SignupForm{
+        font-size: 15px;
+    }
+    .signupForm_nickname{
+        width : 250px;
+    }
+    .signupForm_nickname > input{
+        width : 195px;
+        font-size: 15px;
+    }
+    .signupForm_email{
+        width : 250px;
+    }
+    .signupForm_email > input{
+        font-size: 15px;
+        width : 195px;
+    }
+    .singupForm_password{
+        width : 250px;
+        font-size: 15px;
+    }
+    .signupForm_doubleCheck{
+        width : 250px;
+        font-size: 15px;
+    }
+    .signupForm_passwordAlertBox{
+        width : 250px;
+        font-size: 15px;
+    }
+    .signupForm_signup{
+        font-size : 20px;
+    }
+}

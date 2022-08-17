@@ -1,0 +1,8 @@
+/* padding 주면 페이지 벗어나는 문제 해결 필요.. */
+
+.FeedsSession{
+    display : flex;
+    flex-direction: column;
+    height: 100%;
+    color : white;
+}

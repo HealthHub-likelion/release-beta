@@ -1,0 +1,41 @@
+.profileimageform_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #264056;
+}
+.profileimageform_title > div{
+    color: #66B3F9;
+    font-weight: bold;
+    font-size: 25px;
+}
+.profileimageform_button{
+    float: right;
+    margin : 20px 20px 0 0;
+}
+.profileimageform_button_upload{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #E3F5FE;
+    font-size: 14px;
+    color: #2E61D7;
+    border: none;
+    outline: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.profileimageform_button_delete{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #2E61D7;
+    font-size: 14px;
+    color: #E3F5FE;
+    border: none;
+    outline: none;
+    margin: 5px;
+    cursor: pointer;
+}

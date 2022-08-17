@@ -1,0 +1,15 @@
+.RecordsState{
+    border : 1px solid white;
+    color : #E3F5FE;
+    width : 90%;
+    margin : auto;
+    margin-top : 30px;
+    padding : 10px 20px;
+    border-radius: 15px;
+}
+.recordsState_entirewave{
+    color:#66B3F9;
+}
+.recordsState_continuewave{
+    color:#2E61D7;
+}
