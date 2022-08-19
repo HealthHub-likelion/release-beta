@@ -36,7 +36,6 @@ function SecurityForm({ isOpen, setIsOpen }) {
         })
             .then((res) => {
                 // 잘 불러와졌을때
-                console.log('now isOpen', res.data.status.isOpen);
             })
             .catch((err) => {
                 // 오류 나왓을 때
