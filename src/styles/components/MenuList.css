@@ -34,7 +34,7 @@
     font-size: 18px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px){
     .menulist_button_box{
         padding: 10px 15px;
     }
@@ -46,7 +46,19 @@
         font-size: 18px;
     }
 }
-@media only screen and (min-width: 450px) and (max-width: 899px) {
+@media only screen and (min-width: 900px) and (max-width: 1199px){
+    .menulist_button_box{
+        padding: 8px 13px;
+    }
+    .menulist_button_img{
+        height: 18px;
+    }
+    .menulist_button{
+        margin: 0 0 0 8px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px){
     .menulist_button_box{
         padding: 8px 6px;
     }
@@ -56,5 +68,41 @@
     .menulist_button{
         margin: 0 0 0 5px;
         font-size: 15px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .menulist_button_box{
+        padding: 7px 5px;
+    }
+    .menulist_button_img{
+        height: 15px;
+    }
+    .menulist_button{
+        margin: 0 0 0 4px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 449px){
+    .menulist_button_box{
+        padding: 5px 3px;
+    }
+    .menulist_button_img{
+        height: 10px;
+    }
+    .menulist_button{
+        margin: 0 0 0 2px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 300px){
+    .menulist_button_box{
+        padding: 5px 1px;
+    }
+    .menulist_button_img{
+        height: 7px;
+    }
+    .menulist_button{
+        margin: 0 0 0 1px;
+        font-size: 10px;
     }
 }

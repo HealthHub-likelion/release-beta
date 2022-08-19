@@ -31,7 +31,7 @@ function WavesElement({userData}) {
         const date = new Date();
 
         const plateList = [];
-   
+        
         for(let i = 29; i > -1; i--){
             const dateCount = new Date(date.getFullYear(), date.getMonth(), date.getDate() - i);
             const compareDate = normalizationDate(dateCount);
@@ -74,6 +74,7 @@ function WavesElement({userData}) {
             plateList.push(
                 <div key={i} className={seletClassName}></div>
             );
+            
         }
         return plateList;
     }

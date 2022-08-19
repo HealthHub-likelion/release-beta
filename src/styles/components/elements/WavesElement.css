@@ -33,26 +33,9 @@
     color: rgb(215, 215, 215);
     margin: 3px 5px;
     font-size: 15px;
+    margin : auto;
 }
 
-.wave_plate{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
-    width: 20px;
-    height: 20px;
-    margin: 1px 2.5px;
-    border-radius: 4px;
-}
-.wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
-    width: 15px;
-    height: 15px;
-    margin: 1px 2px;
-    border-radius: 3px;
-}
 .wave_none_box, .wave_state_none_box{
     background-color: #10273B;
 }
@@ -77,4 +60,215 @@
     color: rgb(215, 215, 215);;
     font-size: 15px;
     margin: 0 5px
+}
+
+.wave_plate{
+    display: flex;
+    flex-direction: row;
+    margin : auto;
+}
+
+@media only screen and (min-width: 1200px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 20px;
+        height: 20px;
+        margin: 1px 2.5px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 15px;
+        height: 15px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 20px;
+        height: 16px;
+        margin: 1px 2px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 13px;
+        height: 13px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 20px;
+        height: 20px;
+        margin: 2.5px 3px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 15px;
+        height: 15px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+    .wave_plate{
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        margin : auto;
+    }
+    .wave_date_info{
+        width : 550px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 20px;
+        height: 20px;
+        margin: 3px 3px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 15px;
+        height: 15px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+    .wave_plate{
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        
+        margin : auto;
+    }
+    .wave_header{
+        font-size :20px;
+    }
+    .wave_date_info{
+        font-size : 14px;
+    }
+    .wave_date_sate_info_content{
+        font-size : 14px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 450px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 15px;
+        height: 15px;
+        margin: 2px 3px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 12px;
+        height: 12px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+    .wave_plate{
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        width : 330px;
+        margin : auto;
+    }
+    .wave_date_info{
+        width : 340px;
+    }
+    .wave_Wave{
+        margin: 0 40px;
+    }
+    .wave_header{
+        font-size :20px;
+    }
+    .wave_date_info{
+        font-size : 14px;
+    }
+    .wave_date_sate_info_content{
+        font-size : 14px;
+    }
+    .wave_header{
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 375px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 15px;
+        height: 15px;
+        margin: 2px 3px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 12px;
+        height: 12px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+    .wave_plate{
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        width : 240px;
+        margin : auto;
+    }
+    .wave_date_info{
+        width : 250px;
+    }
+    .wave_Wave{
+        margin: 0 40px;
+    }
+    .wave_header{
+        font-size :17px;
+    }
+    .wave_date_info{
+        font-size : 13px;
+    }
+    .wave_date_sate_info_content{
+        font-size : 13px;
+    }
+    .wave_header{
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 300px){
+    .wave_none_box, .wave_1lv_box, .wave_2lv_box, .wave_3lv_box{
+        width: 13px;
+        height: 13px;
+        margin: 2px 3px;
+        border-radius: 4px;
+    }
+    .wave_state_none_box, .wave_state_1lv_box, .wave_state_2lv_box, .wave_state_3lv_box{
+        width: 10px;
+        height: 10px;
+        margin: 1px 2px;
+        border-radius: 3px;
+    }
+    .wave_plate{
+        height: 10%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        width : 190px;
+        margin : auto;
+    }
+    .wave_date_info{
+        width : 200px;
+    }
+    .wave_Wave{
+        margin: 0 40px;
+    }
+    .wave_header{
+        font-size :15px;
+    }
+    .wave_date_info{
+        font-size : 12px;
+    }
+    .wave_date_sate_info_content{
+        font-size : 12px;
+    }
+    .wave_header{
+        margin: 0 40px;
+    }
 }

@@ -3,18 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 5px 15px;
-    margin-bottom: 10px;
 }
 .create_routine_header > input{
     border: none;
     outline: none;
-    font-size: 25px;
     font-weight: 500;
     border-bottom: 1px solid #999999;
-    width: 200px;
-    padding: 2px 5px;
 }
 
 .create_routine_header > div{
@@ -23,9 +17,7 @@
     overflow: hidden;
 }
 .create_routine_state_click, .create_routine_state_unclick{
-    font-size: 13px;
     border: none;
-    padding: 5px 15px;
     font-weight: 500;
     height: 100%;
     width: 50%;
@@ -40,15 +32,11 @@
 }
 
 .create_routine_body{
-    padding: 15px 20px;
-    max-height: 400px;
     overflow: scroll;
 }
 .create_add_exercise{
     background-color: transparent;
     width: 100%;
-    font-size: 16px;
-    padding: 3px 0;
     border-radius: 7px;
     border: 2px solid #2E61D7;
     color: #2E61D7;
@@ -57,22 +45,15 @@
 
 
 .create_routine_footer{
-    padding: 20px 20px 0 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .create_routine_footer_left{
-    font-size: 16px;
-    padding: 3px;
-    margin-right: 5px;
     background-color: transparent;
     border: 2px solid #2E61D7;
     color: #2E61D7;
 }
 .create_routine_footer_right{
-    font-size: 16px;
-    padding: 3px;
-    margin-left: 5px;
     background-color: #2E61D7;
     border: #2E61D7;
     color: white;
@@ -81,4 +62,167 @@
     outline: none;
     border-radius: 7px;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 600px){
+    .create_routine_header{
+        height: 50px;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+    }
+    .create_routine_header > input{
+        font-size: 25px;
+        width: 200px;
+        padding: 2px 5px;
+    }
+    .create_routine_state_click, .create_routine_state_unclick{
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .create_routine_body{
+        padding: 15px 20px;
+        max-height: 400px;
+    }
+    .create_add_exercise{
+        font-size: 16px;
+        padding: 3px 0;
+    }
+    .create_routine_footer{
+        padding: 20px 20px 0 20px;
+    }
+    .create_routine_footer_left{
+        font-size: 16px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .create_routine_footer_right{
+        font-size: 16px;
+        padding: 3px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .create_routine_header{
+        height: 40px;
+        padding: 3px 12px;
+        margin-bottom: 8px;
+    }
+    .create_routine_header > input{
+        font-size: 22px;
+        width: 150px;
+        padding: 1px 4px;
+    }
+    .create_routine_state_click, .create_routine_state_unclick{
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+    .create_routine_body{
+        padding: 12px 15px;
+        max-height: 350px;
+    }
+    .create_add_exercise{
+        font-size: 13px;
+        padding: 2px 0;
+    }
+    .create_routine_footer{
+        padding: 18px 18px 0 18px;
+    }
+    .create_routine_footer_left{
+        font-size: 13px;
+        padding: 2px;
+        margin-right: 3px;
+    }
+    .create_routine_footer_right{
+        font-size: 13px;
+        padding: 2px;
+        margin-left: 3px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 449px){
+    .create_routine_header{
+        height: 30px;
+        padding: 2px 10px;
+        margin-bottom: 6px;
+    }
+    .create_routine_header > input{
+        font-size: 16px;
+        width: 120px;
+        padding: 1px 3px;
+    }
+    .create_routine_header > div{
+        display: flex;
+        width: 120px;
+    }
+    .create_routine_state_click, .create_routine_state_unclick{
+        font-size: 11px;
+        padding: 2px 10px;
+    }
+    .create_routine_body{
+        padding: 10px 13px;
+        max-height: 330px;
+    }
+    .create_add_exercise{
+        font-size: 12px;
+        padding: 1px 0;
+    }
+    .create_routine_footer{
+        padding: 16px 16px 0 16px;
+    }
+    .create_routine_footer_left{
+        font-size: 12px;
+        padding: 1px;
+        margin-right: 2px;
+    }
+    .create_routine_footer_right{
+        font-size: 12px;
+        padding: 1px;
+        margin-left: 2px;
+    }
+    .edit_exercise_column{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .create_routine_header{
+        height: 20px;
+        padding: 1px 8px;
+        margin-bottom: 4px;
+    }
+    .create_routine_header > input{
+        font-size: 13px;
+        width: 100px;
+        padding: 1px 2px;
+    }
+    .create_routine_header > div{
+        display: flex;
+        width: 110px;
+    }
+    .create_routine_state_click, .create_routine_state_unclick{
+        font-size: 10px;
+        padding: 1px 8px;
+    }
+    .create_routine_body{
+        padding: 5px 8px;
+        max-height: 300px;
+    }
+    .create_add_exercise{
+        font-size: 11px;
+        padding: 1px 0;
+    }
+    .create_routine_footer{
+        padding: 14px 14px 0 14px;
+    }
+    .create_routine_footer_left{
+        font-size: 10px;
+        padding: 1px;
+        margin-right: 1px;
+    }
+    .create_routine_footer_right{
+        font-size: 10px;
+        padding: 1px;
+        margin-left: 1px;
+    }
+    .edit_exercise_column{
+        font-size: 10px;
+    }
 }

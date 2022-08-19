@@ -1,8 +1,10 @@
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import LoadingSpinner from './LoadingSpinner';
 
 function InitialData({username, setUserData}) {
+  const [load, setLoad] = useState(true);
   const navigate = useNavigate();
   
     useEffect(()=>{
@@ -21,6 +23,7 @@ function InitialData({username, setUserData}) {
             localStorage.setItem('HH_name', data.name);
           }
           setUserData(data);
+          setLoad(false);
         })
         .catch((err)=>{
           // console.log(err);
@@ -28,6 +31,10 @@ function InitialData({username, setUserData}) {
           navigate(`/NotFoundPage`);
         })
       }, [])
+  
+  return(
+    <LoadingSpinner load={load}/>
+  );
 }
 
 export default InitialData;

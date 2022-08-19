@@ -19,7 +19,6 @@ function SettingsSession({ username, userData }) {
         })
             .then((res) => {
                 // 잘 불러와졌을때
-                // console.log('initial isOpen', res.data.status.isOpen);
                 setIsOpen(res.data.status.isOpen[0]);
             })
             .catch((err) => {

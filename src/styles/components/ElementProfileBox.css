@@ -1,15 +1,108 @@
 .ElementProfileBox{
     display: flex;
-    padding : 15px 10px;
 }
 .waveElement_profileName{
-    height : 30px;
-    line-height: 30px;
-    font-size : 15px;
+    color: white;
 }
 .waveElement_profileImgBox{
-    width : 30px;
-    height: 30px;
-    border-radius: 100px;
-    margin-right : 10px;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 1200px){
+    .ElementProfileBox{
+        padding: 18px;
+    }
+    .waveElement_profileName{
+        height : 30px;
+        line-height: 38px;
+        font-size : 20px;
+    }
+    .waveElement_profileImgBox{
+        width : 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-right : 12px;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px){
+    .ElementProfileBox{
+        padding: 15px;
+    }
+    .waveElement_profileName{
+        height : 25px;
+        line-height: 35px;
+        font-size : 15px;
+    }
+    .waveElement_profileImgBox{
+        width : 35px;
+        height: 35px;
+        border-radius: 20px;
+        margin-right : 8px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px){
+    .ElementProfileBox{
+        padding: 15px;
+    }
+    .waveElement_profileName{
+        height : 25px;
+        line-height: 35px;
+        font-size : 15px;
+    }
+    .waveElement_profileImgBox{
+        width : 35px;
+        height: 35px;
+        border-radius: 20px;
+        margin-right : 8px;
+        border: solid 1px white;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .ElementProfileBox{
+        padding: 13px;
+    }
+    .waveElement_profileName{
+        height : 23px;
+        line-height: 30px;
+        font-size : 13px;
+    }
+    .waveElement_profileImgBox{
+        width : 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin-right : 7px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 449px){
+    .ElementProfileBox{
+        padding: 11px;
+    }
+    .waveElement_profileName{
+        height : 21px;
+        line-height: 25px;
+        font-size : 11px;
+    }
+    .waveElement_profileImgBox{
+        width : 25px;
+        height: 25px;
+        border-radius: 15px;
+        margin-right : 6px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .ElementProfileBox{
+        padding: 9px;
+    }
+    .waveElement_profileName{
+        height : 19px;
+        line-height: 20px;
+        font-size : 9px;
+    }
+    .waveElement_profileImgBox{
+        width : 20px;
+        height: 20px;
+        margin-bottom: 3px;
+        border-radius: 15px;
+        margin-right : 5px;
+    }
 }

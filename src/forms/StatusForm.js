@@ -29,6 +29,8 @@ function StatusForm() {
         if (window.confirm('탈퇴하시겠습니까?')) {
             deleteAccount();
             localStorage.removeItem('HH_token');
+            localStorage.removeItem('HH_member_id');
+            localStorage.removeItem('HH_name');
             navigate(`/`);
         }
     }
@@ -36,6 +38,8 @@ function StatusForm() {
     const moveIndex = () => {
         if (window.confirm('로그아웃 하시겠습니까?')) {
             localStorage.removeItem('HH_token');
+            localStorage.removeItem('HH_member_id');
+            localStorage.removeItem('HH_name');
             navigate(`/`);
         }
     }

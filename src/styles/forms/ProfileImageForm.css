@@ -17,7 +17,7 @@
 }
 .profileimageform_button_upload{
     height: 40px;
-    width: 150px;
+    width: 120px;
     border-radius: 10px;
     background-color: #E3F5FE;
     font-size: 14px;
@@ -38,4 +38,74 @@
     outline: none;
     margin: 5px;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .profileimageform_title > div{
+        font-size: 22px;
+    }
+    .profileimageform_button_upload{
+        height: 35px;
+        width: 100px;
+        font-size: 13px;
+    }
+    .profileimageform_button_delete{
+        height: 35px;
+        width: 85px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 599px) {
+    .profileimageform_title > div{
+        font-size: 18px;
+    }
+    .profileimageform_button_upload{
+        height: 30px;
+        width: 90px;
+        font-size: 12px;
+        margin: 4px;
+    }
+    .profileimageform_button_delete{
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 449px) {
+    .profileimageform_title > div{
+        font-size: 16px;
+    }
+    .profileimageform_button_upload{
+        height: 26px;
+        width: 70px;
+        font-size: 10px;
+        margin: 3px;
+    }
+    .profileimageform_button_delete{
+        height: 26px;
+        width: 60px;
+        font-size: 10px;
+        margin: 1px;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 299px) {
+    .profileimageform_title > div{
+        font-size: 14px;
+    }
+    .profileimageform_button_upload{
+        height: 22px;
+        width: 65px;
+        font-size: 10px;
+        margin: 4px;
+    }
+    .profileimageform_button_delete{
+        height: 22px;
+        width: 55px;
+        font-size: 10px;
+        margin: 0px;
+    }
 }

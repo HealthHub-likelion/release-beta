@@ -40,8 +40,8 @@ function IndexPage() {
     }
 
     return (
-        <IndexContainer>
-            <div className="IndexPage">
+        <div className="IndexPage">
+            <IndexContainer>
                 <div className = "index_header_userSearch">
                     <SearchUser/>
                 </div>
@@ -51,7 +51,7 @@ function IndexPage() {
                         <div className="index_top_title_left">Hub</div>
                     </div>
                     <div className="index_top_slogan">
-                        물결을 일으켜, 파도를 만드세요.
+                        물결이 파도가 될때까지.
                     </div>
                 </div>
                 <div className="index_bottom">
@@ -60,8 +60,8 @@ function IndexPage() {
                     <button className="index_signup_button"
                             onClick={()=>{moveSignupPage()}}>Signup</button>
                 </div>
-            </div>
-        </IndexContainer>
+            </IndexContainer>
+        </div>
     );
 }
 

@@ -18,10 +18,20 @@
 .signup_logo_left{
     color: #E3F5FE;
     margin-left: 15px;
-    font-size: 18px;
 }
 .signup_logo_right{
     color: #66B3F9;
     margin-left: 3px;
-    font-size: 18px;
+}
+
+@media only screen and (min-width: 900px) {
+    .signup_logo_left, .signup_logo_right{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 899px) {
+    .signup_logo_left, .signup_logo_right{
+        font-size: 15px;
+    }
 }

@@ -36,3 +36,55 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .nicknameform_title > div{
+        font-size: 22px;
+    }
+    .nicknameform_nickname > input{
+        width : 160px;
+        font-size: 16px;
+    }
+    .nicknameform_nickname > button{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 599px) {
+    .nicknameform_title > div{
+        font-size: 18px;
+    }
+    .nicknameform_nickname > input{
+        width : 120px;
+        font-size: 14px;
+    }
+    .nicknameform_nickname > button{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 449px) {
+    .nicknameform_title > div{
+        font-size: 16px;
+    }
+    .nicknameform_nickname > input{
+        width : 80px;
+        font-size: 12px;
+    }
+    .nicknameform_nickname > button{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 299px) {
+    .nicknameform_title > div{
+        font-size: 14px;
+    }
+    .nicknameform_nickname > input{
+        width : 60px;
+        font-size: 11px;
+    }
+    .nicknameform_nickname > button{
+        font-size: 11px;
+    }
+}

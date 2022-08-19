@@ -13,17 +13,19 @@ function SignupPage() {
   }
 
     return (
-      <ProfileContainer>
-        <div className="SignupPage">
-          <SignupHeader/>
+      <div className="SignupPage">
+        <ProfileContainer>
+          <div className="signup_header">
+            <SignupHeader/>
+          </div>
           <div className="signup_form">
             <SignupForm/>
           </div>
           <div className="signup_bottom">
             <div onClick={()=>{moveLoginPage()}}>Login</div>
           </div>
-        </div>
-      </ProfileContainer>
+        </ProfileContainer>
+      </div>
     );
   }
 

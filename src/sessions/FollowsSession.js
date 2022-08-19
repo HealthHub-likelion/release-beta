@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import FollowList from '../components/FollowList';
+import '../styles/sessions/FollowsSession.css'
 
-function FollowsSession({showFollowers, userData}) {
+function FollowsSession({showFollowers, userData, setUserData}) {
 
     const [follower, setFollower] = useState([]); //팔로워 목록
     const [following, setFollowing] = useState([]); //팔로잉 목록
@@ -58,6 +59,7 @@ function FollowsSession({showFollowers, userData}) {
       setFollowing={setFollowing}
       showFollowers={showFollowers}
       userData={userData}
+      setUserData={setUserData}
       />
     </div>
   )

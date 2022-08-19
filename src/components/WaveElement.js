@@ -32,8 +32,11 @@ const WaveElement = ({record_img, create_time, routine_name, comment,member_nick
                 <div key={i}>{line[i]}</div>
             );
         }
-
         return list;
+    }
+
+    const closeComment = () =>{
+        setOpenComment(false);
     }
 
     return (
@@ -60,9 +63,16 @@ const WaveElement = ({record_img, create_time, routine_name, comment,member_nick
                             onClick={handleOpen}>{handleComment(comment)}</div>
                     </div>
                     {
-                        openComment === true && comment.length > 15? 
-                        <div className='waveElement_detailComment'>{showComment()}
-                        </div> : null
+                        openComment === true && comment.length > 15?
+                        <>
+                            <div className='waveElement_detailComment'>
+                                {showComment()}
+                            </div>
+                            <div 
+                                className='waveElement_closeComment'
+                                onClick={closeComment}>접기</div>
+                        </>
+                        : null
                     }
                 </div>
             </div>

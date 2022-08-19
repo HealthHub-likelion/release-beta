@@ -47,6 +47,13 @@ function SearchExerciseOffcanvas({show, onHide, pre_modal, setProceedCreate, set
         setInputExercise(e.target.value);
     }
 
+    const moveYoutube = (filterList) => {
+        if(window.confirm('유튜브 검색으로 이동합니다.')){
+            window.location.replace(`https://www.youtube.com/results?search_query=${filterList['en_name']}, ${filterList['ko_name']}`);
+            return;
+        } 
+    }
+
     const showExercise = () =>{
         let filterList;
 
@@ -89,7 +96,8 @@ function SearchExerciseOffcanvas({show, onHide, pre_modal, setProceedCreate, set
                             <div className='search_exercise_part'>
                                 {filterList[i]['part']}
                             </div>
-                            <img alt='정보' src={`${process.env.REACT_APP_PROXY}/media/images/icons/HH_icon_info.png`}/>
+                            <img alt='정보' src={`${process.env.REACT_APP_PROXY}/media/images/icons/HH_icon_info.png`}
+                                onClick={()=>{moveYoutube(filterList[i])}}/>
                         </div>
                     </div>
                 );

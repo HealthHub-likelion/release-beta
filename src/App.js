@@ -13,7 +13,7 @@ import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const validWidth = useMediaQuery({
-    query : "(min-width:450px)"
+    query : "(min-width:270px)"
   });
 
   return (

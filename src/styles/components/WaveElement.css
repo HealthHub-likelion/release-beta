@@ -1,23 +1,17 @@
-.WaveElement{
-    width : 400px;
-    margin : auto;
-    margin-top : 20px;
-    padding : 5px 20px;
-}
 .waveElement_container{
-    border: 3px solid #264056;
-    border-radius: 10px;
+    border: 1px solid #264056;
+    border-radius: 5px;
 }
 .waveElement_imgContainer{
-    background-color: white;
+    background-color: #061726;
 }
 .waveElement_content{
-    padding : 10px;
+    padding : 15px;
 }
 .waveElement_content_fistLine{
     display : flex;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .waveElement_content_secondLine{
     display : flex;
@@ -27,33 +21,140 @@
     color : #66B3F9;
 }
 .waveElement_date{
-    color : #2E61D7;
+    color : #8a8a8a;
 }
 .waveElement_detailComment{
     margin-top : 10px;
 }
-@media only screen and (min-width: 900px) {
-    .WaveElement{
-        width : 450px;
-    }
+.waveElement_closeComment{
+    color : #454545;
+    font-size: 15px;
+    text-align: center;
+    margin-top : 5px;
+}
+.waveElement_routine, .waveElement_comment{
+    color: white;
+}
 
+@media only screen and (min-width: 1200px){
+    .WaveElement{
+        width : 500px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .waveElement_content{
+        font-size : 15px;
+    }
+    .waveElement_content_fistLine{
+        font-size: 16px;
+        font-weight: 300;
+    }
     .waveElement_img{
         display : block;
-        width : 100%;
-        height : 400px;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
     }
 }
-@media only screen and (min-width: 450px) and (max-width: 899px) {
+@media only screen and (min-width: 900px) and (max-width: 1199px){
     .WaveElement{
-        width : 400px;
+        width : 450px;
+        margin: auto;
+        margin-bottom: 20px;
     }
     .waveElement_content{
         font-size : 14px;
     }
-
+    .waveElement_content_fistLine{
+        font-size: 15px;
+        font-weight: 300;
+    }
     .waveElement_img{
         display : block;
-        width : 100%;
-        height : 350px;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px){
+    .WaveElement{
+        width : 450px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .waveElement_content{
+        font-size : 14px;
+    }
+    .waveElement_content_fistLine{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .waveElement_img{
+        display : block;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .WaveElement{
+        width : 400px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .waveElement_content{
+        font-size : 13px;
+    }
+    .waveElement_content_fistLine{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .waveElement_img{
+        display : block;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 449px){
+    .WaveElement{
+        width : 250px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .waveElement_content{
+        font-size : 12px;
+    }
+    .waveElement_content_fistLine{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .waveElement_img{
+        display : block;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .WaveElement{
+        width : 230px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .waveElement_content{
+        font-size : 5px;
+    }
+    .waveElement_content_fistLine{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .waveElement_img{
+        display : block;
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
     }
 }

@@ -33,10 +33,18 @@ const FeedsSession = () => {
         return getCreate_time;
     }
 
+    function latest(feed_myList){
+        const latestList = [...feed_myList];
+        latestList.sort((a,b)=>{
+            return b.record_id - a.record_id;
+        })
+        return latestList;
+    }
+
     return (
         <div className='FeedsSession'>
             {
-                        feed_myList.map((e,i)=>{
+                        latest(feed_myList).map((e,i)=>{
                             return(
                                 <WaveElement key = {i}
                                 record_img = {e.record_img}

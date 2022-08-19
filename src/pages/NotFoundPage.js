@@ -28,23 +28,29 @@ const NotFoundPage = () => {
     })
 
     useEffect(()=>{
-
-    axios.post(`${process.env.REACT_APP_PROXY}/accounts/membersearchbynickname`,{
-        nickname : inputName
-    },{
-        headers:{
-            Authorization: token
+        if(inputName !== ''){
+            axios.post(`${process.env.REACT_APP_PROXY}/accounts/membersearchbykeyword`,{
+                keyword : inputName
+            },{
+                headers:{
+                    Authorization: token
+                }
+            })
+            .then((res)=>{
+                if(inputName == ''){
+                    setUserList([]);
+                }
+                setUserList([res.data.Member][0]);
+            })
+            .catch((err)=>{
+                console.log(err);
+                setUserList([]);
+            })
         }
-    })
-    .then((res)=>{
-        // console.log(res);
-        setUserList([res.data]);
-    })
-    .catch((err)=>{
-        // console.log(err);
-        setUserList([]);
-    })
-    },[inputName]);
+        else{
+            setUserList([]);
+        }
+        },[inputName]);
 
     const clickLogo = () =>{
         if(localStorage.getItem('HH_name')){
@@ -62,14 +68,16 @@ const NotFoundPage = () => {
         const container = document.querySelector('.notFound_top_search_dropdown');
         const serarchInput = document.querySelector('.notFound_top_search_input');
         document.addEventListener('mouseup', function(e) {
-            if (!container.contains(e.target)) {
-                container.style.display = 'none';
+            if(container !== null){
+                if (!container.contains(e.target)) {
+                    container.style.display = 'none';
+                }
             }
             if (serarchInput.contains(e.target)) {
                 container.style.display = 'block';
             }
         });
-    },[])
+    })
 
     return (
         <ProfileContainer>
@@ -83,23 +91,24 @@ const NotFoundPage = () => {
                         </div>
                         {showDropDown &&
                         <div className='notFound_top_search_dropdown'>
-                            {   
+                            {
                                 userList.map((e,i)=>{
                                     return(
                                         <div className="notFound_userList" key = {i}
-                                            onClick={()=>{moveToUser(e.Member.name)}}>  
+                                            onClick={()=>{moveToUser(e.name)}}>  
                                             <div className="notFound_userImgContainer">
                                                 <img
                                                     className="notFound_userImg"
-                                                    src = {`${process.env.REACT_APP_PROXY}/media/${e.Member.img}`}
+                                                    src = {`${process.env.REACT_APP_PROXY}/media/${e.img}`}
                                                     />
                                             </div>
-                                            <div className="notFound_userName">{e.Member.name}</div>
+                                            <div className="notFound_userName">{e.name}</div>
                                         </div>
                                     )
                                 })
                             }
-                        </div>}
+                        </div>
+                        }
                         <div className='notFound_box' onClick={()=>{clickLogo()}}>
                             <div className='notFound_logo_left'>Health</div>
                             <div className='notFound_logo_right'>Hub</div>

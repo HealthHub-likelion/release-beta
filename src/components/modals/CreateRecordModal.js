@@ -106,15 +106,37 @@ function CreateRecordModal({show, onHide, userData}) {
             const setStartTime = `${addRecordData['start_time']['year']}-${addRecordData['start_time']['month']}-${addRecordData['start_time']['date']} ${addRecordData['start_time']['hour']}:${addRecordData['start_time']['minute']}:00`;
             const setEndTime = `${addRecordData['end_time']['year']}-${addRecordData['end_time']['month']}-${addRecordData['end_time']['date']} ${addRecordData['end_time']['hour']}:${addRecordData['end_time']['minute']}:00`;
 
-            formData.append('start_time', setStartTime);
-            formData.append('end_time', setEndTime);
-            formData.append('routine_id', addRecordData['routine_id']);
-            formData.append('member_id', localStorage.getItem('HH_member_id'));
-            formData.append('comment', addRecordData['comment']);
             if(addRecordData['img']){
                 formData.append('img', addRecordData['img'][0]);
             }
-    
+            
+            axios.post(`${process.env.REACT_APP_PROXY}/record/`,{
+                start_time : setStartTime,
+                end_time : setEndTime,
+                routine_id : addRecordData['routine_id'],
+                member_id: localStorage.getItem('HH_member_id'),
+                comment : addRecordData['comment']
+            },{
+                headers:{
+                    Authorization: localStorage.getItem('HH_token')
+                }
+            }).then((res)=>{
+                if(res.data.record_id && addRecordData['img']){
+                    axios.post(`${process.env.REACT_APP_PROXY}/record/${res.data.record_id}/`, formData ,{
+                        headers:{
+                            Authorization: localStorage.getItem('HH_token')
+                        }
+                    }).then((res)=>{
+                        console.log(res);
+                    }).catch((err)=>{
+                        console.log(err);
+                    })
+                    console.log(res);
+                }
+            }).catch((err)=>{
+                console.log(err);
+            })
+
             axios.post(`${process.env.REACT_APP_PROXY}/record/`,formData,{
                 headers:{
                     Authorization: localStorage.getItem('HH_token')

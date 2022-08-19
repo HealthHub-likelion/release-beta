@@ -1,6 +1,5 @@
 .NotFoundPage{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +12,7 @@
 }
 .notFound_top{
     width: 100%;
-    height: 30%;
+    height: 180px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -23,38 +22,26 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    height : 48px;
 }
 .notFound_top_searchBox{
-    margin-top : 20px;
-    margin-right: 20px;
     border: 1px solid #878787;
-    padding: 3px 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 8px;
-    height: 35px;
 }
 .notFound_top_searchBox > input{
-    width: 200px;
-    margin-right: 10px;
     background-color: transparent;
     outline: none;
     border: none;
-    font-size: 15px;
     color: rgb(186, 186, 186);
 }
-.notFound_top_searchBox > img{
-    height: 15px;
-}
+
 .notFound_top_search_dropdown{
     position: absolute;
-    width: 248px;
     border-radius: 3px;
-    min-height: 100px;
     background-color: #10273B;
-    top: 56px;
-    margin-left: 5px;
     z-index: 2;
     color : white;
 }
@@ -65,35 +52,19 @@
 }
 .notFound_logo_left{
     color: #E3F5FE;
-    margin-left: 15px;
-    font-size: 18px;
 }
 .notFound_logo_right{
     color: #66B3F9;
-    margin-left: 3px;
-    font-size: 18px;
 }
 .notFound_userList{
     display : flex;
-    height : 40px;
     border-bottom: 2px solid #264056;
-}
-.notFound_userImgContainer{
-    width : 25px;
-    height : 25px;
-    margin : auto 10px;
 }
 .notFound_userImg{
     display : block;
     width : 100%;
-    height : 25px;
     border-radius: 15px;
     border : none;
-}
-.notFound_userName{
-    margin : auto 10px;
-    margin-left : 5px;
-    font-size: 20px;
 }
 @media only screen and (min-width: 900px) {
     .NotFound_404{
@@ -115,6 +86,332 @@
     }
     .NotFound_alert{
         font-size: 23px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 20px;
+        padding: 3px 15px;
+        height: 35px;
+        width : 260px;
+    }
+    .notFound_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .notFound_top_searchBox > img{
+        height: 15px;
+    }
+    .notFound_top_search_dropdown{
+        width: 248px;
+        top: 52px;
+        margin-left: 5px;
+        max-height: 160px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 40px;
+    }
+    .notFound_userImgContainer{
+        width : 25px;
+        height : 25px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 25px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 17px;
+    }
+    .notFound_logo_left{
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 17px;
+        padding: 3px 15px;
+        height: 35px;
+        width : 250px;
+    }
+    .notFound_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .notFound_top_searchBox > img{
+        height: 15px;
+    }
+    .notFound_top_search_dropdown{
+        width: 240px;
+        top: 52px;
+        margin-left: 5px;
+        max-height: 140px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 35px;
+    }
+    .notFound_userImgContainer{
+        width : 25px;
+        height : 25px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 25px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 17px;
+    }
+    .notFound_box{
+        margin: 20px 25px 0 0;
+    }
+    .notFound_logo_left{
+        margin-left: 13px;
+        font-size: 18px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 15px;
+        padding: 3px 15px;
+        height: 33px;
+        width : 240px;
+    }
+    .notFound_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .notFound_top_searchBox > img{
+        height: 15px;
+    }
+    .notFound_top_search_dropdown{
+        width: 230px;
+        top: 51px;
+        margin-left: 5px;
+        max-height: 132px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 33px;
+    }
+    .notFound_userImgContainer{
+        width : 24px;
+        height : 24px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 24px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 16px;
+    }
+    .notFound_box{
+        margin: 20px 20px 0 0;
+    }
+    .notFound_logo_left{
+        margin-left: 11px;
+        font-size: 16px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 13px;
+        padding: 3px 15px;
+        height: 30px;
+        width : 210px;
+    }
+    .notFound_top_searchBox > input{
+        width: 155px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .notFound_top_searchBox > img{
+        height: 15px;
+    }
+    .notFound_top_search_dropdown{
+        width: 200px;
+        top:49px;
+        margin-left: 5px;
+        max-height: 124px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 31px;
+    }
+    .notFound_userImgContainer{
+        width : 22px;
+        height : 22px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 22px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 15px;
+    }
+    .notFound_box{
+        margin: 20px 15px 0 0;
+    }
+    .notFound_logo_left{
+        margin-left: 9px;
+        font-size: 15px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 11px;
+        padding: 3px 15px;
+        height: 25px;
+        width : 160px;
+    }
+    .notFound_top_searchBox > input{
+        width: 115px;
+        margin-right: 2px;
+        font-size: 12px;
+    }
+    .notFound_top_searchBox > img{
+        height: 12px;
+    }
+    .notFound_top_search_dropdown{
+        width: 150px;
+        top: 46px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 30px;
+    }
+    .notFound_userImgContainer{
+        width : 20px;
+        height : 20px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 20px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 14px;
+    }
+    .notFound_box{
+        margin: 20px 12px 0 0;
+    }
+    .notFound_logo_left{
+        margin-left: 9px;
+        font-size: 14px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 14px;
+    }
+    .NotFound_404{
+        font-size: 80px;
+        text-align: center;
+        height: 100px;
+    }
+    .NotFound_alert{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 300px){
+    .notFound_top_searchBox{
+        margin-top : 20px;
+        margin-right: 8px;
+        padding: 3px 15px;
+        height: 25px;
+        width : 150px;
+    }
+    .notFound_top_searchBox > input{
+        width: 110px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+    .notFound_top_searchBox > img{
+        height: 12px;
+    }
+    .notFound_top_search_dropdown{
+        width: 140px;
+        top: 46px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .notFound_userList{
+        height : 30px;
+    }
+    .notFound_userImgContainer{
+        width : 20px;
+        height : 20px;
+        margin : auto 10px;
+    }
+    .notFound_userImg{
+        height : 20px;
+    }
+    .notFound_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 14px;
+    }
+    .notFound_box{
+        margin: 20px 10px 0 0;
+    }
+    .notFound_logo_left{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .notFound_logo_right{
+        margin-left: 3px;
+        font-size: 12px;
+    }
+    .NotFound_404{
+        font-size: 60px;
+        text-align: center;
+        height: 75px;
+    }
+    .NotFound_alert{
+        font-size: 14px;
         text-align: center;
     }
 }

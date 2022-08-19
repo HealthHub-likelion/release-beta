@@ -3,29 +3,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 5px 15px;
-    margin-bottom: 10px;
 }
 .edit_routine_header > input{
     border: none;
     outline: none;
-    font-size: 25px;
     font-weight: bold;
     border-bottom: 1px solid #999999;
     width: 200px;
-    padding: 2px 5px;
 }
-
 .edit_routine_header > div{
     border: 2px solid #2E61D7;
     border-radius: 7px;
     overflow: hidden;
 }
 .edit_routine_state_click, .edit_routine_state_unclick{
-    font-size: 13px;
     border: none;
-    padding: 5px 15px;
     font-weight: 500;
     height: 100%;
     width: 50%;
@@ -38,78 +30,55 @@
     color: #2E61D7;
     background-color: transparent;
 }
-
 .edit_add_exercise {
     background-color: transparent;
     width: 100%;
-    font-size: 16px;
-    padding: 3px 0;
     border-radius: 7px;
     border: 2px solid #2E61D7;
     color: #2E61D7;
     font-weight: 700;
 }
-
 .edit_routine_body{
-    padding: 15px;
-    max-height: 400px;
     overflow: scroll;
-}
-.edit_exercise_box{
-    margin: 15px 0;
 }
 .edit_exercise_top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 0.5px solid #dfdfdf;
-    padding: 10px 10px;
 }
 .edit_exercise_title_en{
     color: #2E61D7;
     font-weight: 700;
-    font-size: 18px;
 }
 .edit_exercise_title_kr{
     color: #4f4f4f;
     font-weight: 600;
-    font-size: 16px;
-    margin-top: -5px;
 }
-
 .edit_exercise_column{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-    padding: 5px 10px;
     font-weight: bold;
     border-bottom: 0.5px solid #dfdfdf;
     text-align: center;
 }
-
 .edit_exercise_set_box{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
-    padding: 5px 10px;
     text-align: center;
 }
-
 .edit_exercise_set_box > div > input{
-    width: 60px;
     text-align: center;
     border: none;
     outline: none;
     border-bottom: 1px solid #999999;
 }
-
 .edit_exercise_top > button{
     border: 1.5px solid #2E61D7;
     color: #2E61D7;
     background-color: transparent;
     font-weight: 600;
     border-radius: 5px;
-    height: 31px;
-    padding: 0 10px;
-    width: 60px;
 }
 .edit_exercise_top > button:hover{
     border: 1.5px solid #ff6600;
@@ -121,38 +90,27 @@
     background-color: transparent;
     font-weight: 500;
     border-radius: 5px;
-    height: 28px;
-    width: 50px;
 }
 .edit_exercise_set_box > div > button:hover{
     border: 1.5px solid #ff6600;
     color: #ff6600;
 }
-
 .edit_add_set{
     width: 100%;
-    padding: 10px 30px;
 }
 .edit_add_set > button{
     width: 100%;
     border: none;
     background-color: #2E61D7;
-    padding: 5px;
-    font-size: 15px;
     color: white;
     border-radius: 10px;
     font-weight: 600;
 }
-
 .edit_routine_footer{
-    padding: 20px 20px 0 20px;
     border-top: 2px solid rgb(209, 209, 209);
 }
 .edit_routine_footer > button{
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    padding: 3px;
     background-color: transparent;
     border: 2px solid rgb(174, 174, 174);
     color: rgb(128, 128, 128);
@@ -166,24 +124,358 @@
     grid-template-columns: 1fr 1fr;
 }
 .edit_routine_footer_left{
-    font-size: 16px;
-    padding: 3px;
-    margin-right: 5px;
     background-color: transparent;
     border: 2px solid #2E61D7;
     color: #2E61D7;
 }
 .edit_routine_footer_right{
-    font-size: 16px;
-    padding: 3px;
-    margin-left: 5px;
     background-color: #2E61D7;
     border: #2E61D7;
     color: white;
 }
-
 .edit_routine_footer > button, .edit_routine_footer_left, .edit_routine_footer_right{
     outline: none;
     border-radius: 7px;
     font-weight: 600;
+}
+
+@media only screen and (min-width: 600px){
+    .edit_routine_header{
+        height: 50px;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+    }
+    .edit_routine_header > input{
+        font-size: 25px;
+        padding: 2px 5px;
+    }
+    .edit_routine_state_click, .edit_routine_state_unclick{
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .edit_add_exercise {
+        font-size: 16px;
+        padding: 3px 0;
+    }
+    .edit_routine_body{
+        height: 400px;
+        padding: 15px;
+    }
+    .edit_exercise_box{
+        margin: 15px 0;
+    }
+    .edit_exercise_top{
+        padding: 10px 10px;
+    }
+    .edit_exercise_title_en{
+        font-size: 18px;
+    }
+    .edit_exercise_title_kr{
+        font-size: 16px;
+        margin-top: -5px;
+    }
+    .edit_exercise_column{
+        padding: 5px 10px;
+    }
+    .edit_exercise_set_box{
+        padding: 5px 10px;
+    }
+    .edit_exercise_set_box > div > input{
+        width: 60px;
+    }
+    .edit_exercise_top > button{
+        height: 31px;
+        padding: 0 10px;
+        width: 60px;
+    }
+    .edit_exercise_set_box > div > button{
+        height: 28px;
+        width: 50px;
+    }
+    .edit_add_set{
+        padding: 10px 30px;
+    }
+    .edit_add_set > button{
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .edit_routine_footer{
+        padding: 20px 20px 0 20px;
+    }
+    .edit_routine_footer > button{
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 3px;
+    }
+    .edit_routine_footer_left{
+        font-size: 16px;
+        padding: 3px;
+        margin-right: 5px;
+    }
+    .edit_routine_footer_right{
+        font-size: 16px;
+        padding: 3px;
+        margin-left: 5px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .edit_routine_header{
+        height: 40px;
+        padding: 3px 12px;
+        margin-bottom: 8px;
+    }
+    .edit_routine_header > input{
+        font-size: 22px;
+        padding: 1px 4px;
+    }
+    .edit_routine_state_click, .edit_routine_state_unclick{
+        font-size: 13px;
+        padding: 4px 14px;
+    }
+    .edit_add_exercise {
+        font-size: 14px;
+        padding: 2px 0;
+    }
+    .edit_routine_body{
+        height: 380px;
+        padding: 12px;
+    }
+    .edit_exercise_box{
+        margin: 12px 0;
+    }
+    .edit_exercise_top{
+        padding: 8px 8px;
+    }
+    .edit_exercise_title_en{
+        font-size: 16px;
+    }
+    .edit_exercise_title_kr{
+        font-size: 14px;
+        margin-top: -5px;
+    }
+    .edit_exercise_column{
+        padding: 4px 8px;
+    }
+    .edit_exercise_set_box{
+        padding: 4px 8px;
+    }
+    .edit_exercise_set_box > div > input{
+        width: 50px;
+    }
+    .edit_exercise_top > button{
+        height: 26px;
+        padding: 0 8px;
+        width: 50px;
+    }
+    .edit_exercise_set_box > div > button{
+        height: 26px;
+        width: 45px;
+    }
+    .edit_add_set{
+        padding: 8px 26px;
+    }
+    .edit_add_set > button{
+        padding: 4px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+    .edit_routine_footer{
+        padding: 16px 16px 0 16px;
+    }
+    .edit_routine_footer > button{
+        margin-bottom: 8px;
+        font-size: 14px;
+        padding: 2px;
+    }
+    .edit_routine_footer_left{
+        font-size: 14px;
+        padding: 2px;
+        margin-right: 4px;
+    }
+    .edit_routine_footer_right{
+        font-size: 14px;
+        padding: 2px;
+        margin-left: 4px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 449px){
+    .edit_routine_header{
+        height: 20px;
+        padding: 2px 8px;
+        margin-bottom: 6px;
+    }
+    .edit_routine_header > input{
+        font-size: 16px;
+        padding: 1px 2px;
+        width: 140px;
+    }
+    .edit_routine_header > div{
+        height: 24px;
+        width: 90px;
+        display: flex;
+
+    }
+    .edit_routine_state_click, .edit_routine_state_unclick{
+        font-size: 10px;
+    }
+    .edit_add_exercise {
+        font-size: 12px;
+        padding: 1px 0;
+    }
+    .edit_routine_body{
+        height: 350px;
+        padding: 12px;
+    }
+    .edit_exercise_box{
+        margin: 10px 0;
+    }
+    .edit_exercise_top{
+        padding: 6px;
+    }
+    .edit_exercise_title_en{
+        font-size: 12px;
+    }
+    .edit_exercise_title_kr{
+        font-size: 11px;
+        margin-top: -5px;
+    }
+    .edit_exercise_column{
+        padding: 2px 4px;
+    }
+    .edit_exercise_set_box{
+        padding: 2px 4px;
+    }
+    .edit_exercise_set_box > div > input{
+        width: 25px;
+    }
+    .edit_exercise_top > button{
+        height: 22px;
+        padding: 0 6px;
+        width: 40px;
+        font-size: 12px;
+    }
+    .edit_exercise_set_box > div > button{
+        height: 22px;
+        width: 40px;
+    }
+    .edit_add_set{
+        padding: 6px 22px;
+    }
+    .edit_add_set > button{
+        padding: 2px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+    .edit_routine_footer{
+        padding: 14px 14px 0 14px;
+    }
+    .edit_routine_footer > button{
+        margin-bottom: 6px;
+        font-size: 12px;
+        padding: 1px;
+    }
+    .edit_routine_footer_left{
+        font-size: 12px;
+        padding: 1px;
+        margin-right: 2px;
+    }
+    .edit_routine_footer_right{
+        font-size: 12px;
+        padding: 1px;
+        margin-left: 2px;
+    }
+    .edit_exercise_colum, .edit_exercise_set_box{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .edit_routine_header{
+        height: 15px;
+        padding: 1px 6px;
+        margin-bottom: 5px;
+    }
+    .edit_routine_header > input{
+        font-size: 13px;
+        padding: 1px 2px;
+        width: 120px;
+    }
+    .edit_routine_header > div{
+        height: 22px;
+        width: 90px;
+        display: flex;
+
+    }
+    .edit_routine_state_click, .edit_routine_state_unclick{
+        font-size: 10px;
+    }
+    .edit_add_exercise {
+        font-size: 10px;
+        padding: 1px 0;
+    }
+    .edit_routine_body{
+        height: 330px;
+        padding: 2px;
+    }
+    .edit_exercise_box{
+        margin: 5px 0;
+    }
+    .edit_exercise_top{
+        padding: 4px;
+    }
+    .edit_exercise_title_en{
+        font-size: 11px;
+    }
+    .edit_exercise_title_kr{
+        font-size: 10px;
+        margin-top: -3px;
+    }
+    .edit_exercise_column{
+        padding: 2px 3px;
+    }
+    .edit_exercise_set_box{
+        padding: 2px 3px;
+    }
+    .edit_exercise_set_box > div > input{
+        width: 20px;
+    }
+    .edit_exercise_top > button{
+        height: 20px;
+        padding: 0 6px;
+        width: 35px;
+        font-size: 11px;
+    }
+    .edit_exercise_set_box > div > button{
+        height: 20px;
+        width: 38px;
+    }
+    .edit_add_set{
+        padding: 6px 2px;
+    }
+    .edit_add_set > button{
+        padding: 2px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+    .edit_routine_footer{
+        padding: 12px 12px 0 12px;
+    }
+    .edit_routine_footer > button{
+        margin-bottom: 3px;
+        font-size: 10px;
+        padding: 1px;
+    }
+    .edit_routine_footer_left{
+        font-size: 10px;
+        padding: 1px;
+        margin-right: 1px;
+    }
+    .edit_routine_footer_right{
+        font-size: 10px;
+        padding: 1px;
+        margin-left: 2px;
+    }
+    .edit_exercise_colum, .edit_exercise_set_box{
+        font-size: 12px;
+    }
 }

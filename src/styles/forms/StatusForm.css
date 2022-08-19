@@ -39,3 +39,73 @@
     margin: 5px;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .statusform_title > div{
+        font-size: 22px;
+    }
+    .statusform_button_logout{
+        height: 32px;
+        width: 90px;
+        font-size: 13px;
+    }
+    .statusform_button_deleteaccount{
+        height: 32px;
+        width: 90px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 599px) {
+    .statusform_title > div{
+        font-size: 18px;
+    }
+    .statusform_button_logout{
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+        margin: 4px;
+    }
+    .statusform_button_deleteaccount{
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 449px) {
+    .statusform_title > div{
+        font-size: 16px;
+    }
+    .statusform_button_logout{
+        height: 26px;
+        width: 60px;
+        font-size: 11px;
+        margin: 3px;
+    }
+    .statusform_button_deleteaccount{
+        height: 26px;
+        width: 60px;
+        font-size: 11px;
+        margin: 1px;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 299px) {
+    .statusform_title > div{
+        font-size: 14px;
+    }
+    .statusform_button_logout{
+        height: 22px;
+        width: 55px;
+        font-size: 10px;
+        margin: 4px;
+    }
+    .statusform_button_deleteaccount{
+        height: 22px;
+        width: 55px;
+        font-size: 10px;
+        margin: 0px;
+    }
+}

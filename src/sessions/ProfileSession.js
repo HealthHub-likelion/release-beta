@@ -12,25 +12,25 @@ function ProfileSession({username, Tab, showFollowers, setShowFollowers, userDat
     return (
         <>
             {largeScreen?
-            <ProfileContainer>
-                <div className="ProfileSession">
+            <div className="ProfileSession">
+                <ProfileContainer>
                     <div className="profilesession_profile">
                         <Profile username={username} Tab={Tab}
                                 showFollowers={showFollowers} setShowFollowers={setShowFollowers}
                                 userData={userData} setUserData={setUserData}/>
                     </div>
-                </div>
-            </ProfileContainer>
+                </ProfileContainer>
+            </div>
             :
-            <SliceContainer>
-                <div className="ProfileSession">
+            <div className="ProfileSession">
+                <SliceContainer>
                     <div className="profilesession_profile">
                         <Profile username={username} Tab={Tab}
                                 showFollowers={showFollowers} setShowFollowers={setShowFollowers}
                                 userData={userData} setUserData={setUserData}/>
                     </div>
-                </div>
-            </SliceContainer>
+                </SliceContainer>
+            </div>
             }
         </>
     );

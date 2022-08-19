@@ -1,8 +1,11 @@
 /* padding 주면 페이지 벗어나는 문제 해결 필요.. */
 
 .FeedsSession{
-    display : flex;
-    flex-direction: column;
+    width: 100%;
     height: 100%;
-    color : white;
+    max-height: 800px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin: 50px 0;
 }

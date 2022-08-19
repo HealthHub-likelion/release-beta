@@ -3,36 +3,43 @@ import axios from 'axios';
 import { Modal } from 'react-bootstrap';
 import { useState } from 'react';
 import UploadProfile from '../UploadProfile';
+import { useNavigate } from 'react-router-dom';
 
 function ProfileImageModal(props) {
+    const navigate = useNavigate();
+
     const [imageSrc, setImageSrc] = useState('');   // 미리보기 데이터(base 64)
     const [profileImg, setProfileImg] = useState(null); // 프로필 사진 데이터
 
     const token = localStorage.getItem('HH_token');
 
     const uploadProfileImage = async () => {
-        // 1. formData 생성 후 데이터 append
-        let form_data = new FormData();
-        form_data.append("img", profileImg[0]);
+        if (!profileImg) {
+            alert('등록된 이미지가 없습니다.');
+        } else {
+            // 1. formData 생성 후 데이터 append
+            let form_data = new FormData();
+            form_data.append("img", profileImg[0]);
 
-        // 2. axios로 전송
-        await axios.post(`${process.env.REACT_APP_PROXY}/accounts/profileimage/upload`, form_data, {
-            // 헤더 부분
-            headers: {
-                Authorization: token
-            }
-        })
-            .then((res) => {
-                // 잘 불러와졌을때
-                // img 경로 추가시 수정할 부분
+            // 2. axios로 전송
+            await axios.post(`${process.env.REACT_APP_IMAGE}/accounts/profileimage/upload`, form_data, {
+                // 헤더 부분
+                headers: {
+                    Authorization: token
+                }
             })
-            .catch((err) => {
-                // 오류 나왓을 때
-                // console.log(err);
-            })
+                .then((res) => {
+                    // 잘 불러와졌을때
+                    alert('프로필 이미지가 변경되었습니다.')
+                    navigate(`/${props.userdata['name']}`);
+                })
+                .catch((err) => {
+                    // 오류 나왓을 때
+                    // console.log(err);
+                })
 
-        props.onHide()
-        // console.log(props.userdata)
+            props.onHide()
+        }
     }
 
     const removeImage = () => {

@@ -12,9 +12,11 @@ function LoginPage() {
   }
 
   return (
-    <ProfileContainer>
-      <div className="LoginPage">
-        <SignupHeader />
+    <div className="LoginPage">
+      <ProfileContainer>
+        <div className='login_header'>
+          <SignupHeader />
+        </div>
         <div className="login_form">
           <LoginForm />
         </div>
@@ -26,8 +28,8 @@ function LoginPage() {
             Signup
           </button>
         </div>
-      </div>
-    </ProfileContainer>
+      </ProfileContainer>
+    </div>
   );
 }
 

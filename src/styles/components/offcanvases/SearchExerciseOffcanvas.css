@@ -140,3 +140,258 @@
     font-size: 18px;
     color: gray;
 }
+
+@media only screen and (min-width: 600px){
+    .search_exercise_offcanvas{
+        min-width: 599px;
+    }
+    .search_exercise_header{
+        padding: 5px 30px;
+    }
+    .search_exercise_title{
+        font-size: 30px;
+    }
+    .search_exercise_header > div{
+        margin-top: 20px;
+    }
+    .clickedPart, .clickPart{
+        font-size: 18px;
+        margin: 3px;
+        padding: 5px 15px;
+    }
+    .search_exercise_inputBox{
+        margin: 0 3px;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+    .search_exercise_inputBox > input{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .search_exercise_inputBox > img{
+        height: 25px;
+    }
+    .search_exercise_body{
+        padding: 0 10px 50px 10px;
+    }
+    .search_exercise_box{
+        margin: 1.5px 0;
+        padding: 10px 15px;
+    }
+    .search_exercise_en{
+        font-size: 20px;
+    }
+    .search_exercise_ko{
+        font-size: 15px;
+    }
+    .search_exercise_part{
+        font-size: 18px;
+    }
+    .search_exercise_right > img{
+        height: 25px;
+        margin: 0 10px;
+    }
+    .search_exercise_box:hover, .select_exercise_box{
+        padding: 10px 15px;
+    }
+    .search_exercise_footer > button{
+        margin: 5px 5px 0 5px;
+        font-size: 17px;
+    }
+    .emptyBox{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .search_exercise_offcanvas{
+        min-width: 100%;
+    }
+    .search_exercise_header{
+        padding: 5px 30px;
+    }
+    .search_exercise_title{
+        font-size: 30px;
+    }
+    .search_exercise_header > div{
+        margin-top: 20px;
+    }
+    .clickedPart, .clickPart{
+        font-size: 18px;
+        margin: 3px;
+        padding: 5px 15px;
+    }
+    .search_exercise_inputBox{
+        margin: 0 3px;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+    .search_exercise_inputBox > input{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .search_exercise_inputBox > img{
+        height: 25px;
+    }
+    .search_exercise_body{
+        padding: 0 10px 50px 10px;
+    }
+    .search_exercise_box{
+        margin: 1.5px 0;
+        padding: 10px 15px;
+    }
+    .search_exercise_en{
+        font-size: 20px;
+    }
+    .search_exercise_ko{
+        font-size: 15px;
+    }
+    .search_exercise_part{
+        font-size: 18px;
+    }
+    .search_exercise_right > img{
+        height: 25px;
+        margin: 0 10px;
+    }
+    .search_exercise_box:hover, .select_exercise_box{
+        padding: 10px 15px;
+    }
+    .search_exercise_footer > button{
+        margin: 5px 5px 0 5px;
+        font-size: 17px;
+    }
+    .emptyBox{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 499px){
+    .search_exercise_offcanvas{
+        min-width: 100%;
+    }
+    .search_exercise_header{
+        padding: 3px 20px;
+    }
+    .search_exercise_title{
+        font-size: 20px;
+    }
+    .search_exercise_header > div{
+        margin-top: 10px;
+    }
+    .clickedPart, .clickPart{
+        font-size: 13px;
+        margin: 2px;
+        padding: 3px 10px;
+    }
+    .search_exercise_inputBox{
+        margin: 0 2px;
+        padding: 5px 8px;
+    }
+    .search_exercise_inputBox > input{
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .search_exercise_inputBox > img{
+        height: 16px;
+    }
+    .search_exercise_body{
+        padding: 0 8px 30px 8px;
+    }
+    .search_exercise_box{
+        margin: 1.5px 0;
+        padding: 5px 8px;
+    }
+    .search_exercise_en{
+        font-size: 15px;
+    }
+    .search_exercise_ko{
+        font-size: 13px;
+    }
+    .search_exercise_part{
+        font-size: 13px;
+        width: 35px;
+        text-align: end;
+    }
+    .search_exercise_right > img{
+        height: 16px;
+        margin: 0 10px;
+    }
+    .search_exercise_box:hover, .select_exercise_box{
+        padding: 8px 10px;
+    }
+    .search_exercise_footer > button{
+        margin: 3px 3px 0 3px;
+        font-size: 15px;
+        height: 30px;
+    }
+    .emptyBox{
+        font-size: 15px;
+    }
+    .search_exercise_inputBox > input{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .search_exercise_offcanvas{
+        min-width: 100%;
+    }
+    .search_exercise_header{
+        padding: 2px 18px;
+    }
+    .search_exercise_title{
+        font-size: 16px;
+    }
+    .search_exercise_header > div{
+        margin-top: 8px;
+    }
+    .clickedPart, .clickPart{
+        font-size: 11px;
+        margin: 1px;
+        padding: 1px 6px;
+    }
+    .search_exercise_inputBox{
+        margin: 0 1px;
+        padding: 2px 6px;
+    }
+    .search_exercise_inputBox > input{
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .search_exercise_inputBox > img{
+        height: 12px;
+    }
+    .search_exercise_body{
+        padding: 0 6px 25px 6px;
+    }
+    .search_exercise_box{
+        margin: 1.5px 0;
+        padding: 3px 6px;
+    }
+    .search_exercise_en{
+        font-size: 12px;
+    }
+    .search_exercise_ko{
+        font-size: 11px;
+    }
+    .search_exercise_part{
+        font-size: 11px;
+        width: 28px;
+        text-align: end;
+    }
+    .search_exercise_right > img{
+        height: 14px;
+        margin: 0 8px;
+    }
+    .search_exercise_box:hover, .select_exercise_box{
+        padding: 6px 8px;
+    }
+    .search_exercise_footer > button{
+        margin: 2px 2px 0 2px;
+        font-size: 12px;
+        height: 28px;
+    }
+    .emptyBox{
+        font-size: 13px;
+    }
+    .search_exercise_inputBox > input{
+        font-size: 12px;
+    }
+}

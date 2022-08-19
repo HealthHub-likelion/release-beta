@@ -26,6 +26,7 @@
     align-items: center;
     border-radius: 8px;
     height: 35px;
+    margin-bottom: 20px;
 }
 .header_top_searchBox > input{
     width: 200px;
@@ -43,11 +44,36 @@
     position: absolute;
     width: 248px;
     border-radius: 3px;
-    min-height: 100px;
     background-color: #10273B;
     top: 56px;
     margin-left: 5px;
     z-index: 2;
+    color : white;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.header_userList{
+    display : flex;
+    height : 40px;
+    border-bottom: 2px solid #264056;
+}
+.header_userImgContainer{
+    width : 25px;
+    height : 25px;
+    margin : auto 10px;
+}
+.header_userImg{
+    display : block;
+    width : 100%;
+    height : 25px;
+    border-radius: 15px;
+    border : none;
+}
+.header_userName{
+    margin : auto 10px;
+    margin-left : 5px;
+    font-size: 16px;
 }
 .header_top_box > button{
     border: none;
@@ -78,7 +104,7 @@
     height: 100%;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px){
     .header_top_box{
         margin: 20px 30px 0 0;
     }
@@ -100,9 +126,107 @@
         margin-left: 300px;
         margin-right: 100px;
     }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 20px;
+        padding: 3px 15px;
+        height: 35px;
+        width : 260px;
+    }
+    .header_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .header_top_searchBox > img{
+        height: 15px;
+    }
+    .header_top_search_dropdown{
+        width: 248px;
+        top: 75px;
+        margin-left: 5px;
+        max-height: 160px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 40px;
+    }
+    .header_userImgContainer{
+        width : 25px;
+        height : 25px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 25px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 17px;
+    }
 }
-
-@media only screen and (min-width: 450px) and (max-width: 899px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .header_top_box{
+        margin: 18px 28px 0 0;
+    }
+    .header_top_box > button, .header_top_box > button:hover{
+        font-size: 14px;
+    }
+    .header_logo_left{
+        margin-left: 14px;
+        font-size: 16px;
+    }
+    .header_logo_right{
+        margin-left: 3px;
+        font-size: 16px;
+    }
+    .header_bottom{
+        justify-content: flex-end;
+    }
+    .header_MenuList{
+        margin-left: 280px;
+        margin-right: 80px;
+    }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 20px;
+        padding: 3px 15px;
+        height: 35px;
+        width : 250px;
+    }
+    .header_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .header_top_searchBox > img{
+        height: 15px;
+    }
+    .header_top_search_dropdown{
+        width: 240px;
+        top: 73px;
+        margin-left: 5px;
+        max-height: 140px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 35px;
+    }
+    .header_userImgContainer{
+        width : 25px;
+        height : 25px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 25px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px){
     .header_top_box{
         margin: 10px 20px 0 0;
     }
@@ -119,5 +243,242 @@
     }
     .header_bottom{
         justify-content: center;
+    }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 20px;
+        padding: 3px 15px;
+        height: 33px;
+        width : 240px;
+    }
+    .header_top_searchBox > input{
+        width: 200px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .header_top_searchBox > img{
+        height: 15px;
+    }
+    .header_top_search_dropdown{
+        width: 230px;
+        top: 63px;
+        margin-left: 5px;
+        max-height: 132px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 33px;
+    }
+    .header_userImgContainer{
+        width : 24px;
+        height : 24px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 24px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 600px){
+    .header_top_box{
+        margin: 8px 18px 0 0;
+    }
+    .header_top_box > button, .header_top_box > button:hover{
+        font-size: 13px;
+    }
+    .header_logo_left{
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    .header_logo_right{
+        margin-left: 2px;
+        font-size: 14px;
+    }
+    .header_bottom{
+        justify-content: center;
+    }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 15px;
+        padding: 3px 15px;
+        height: 30px;
+        width : 210px;
+    }
+    .header_top_searchBox > input{
+        width: 155px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+    .header_top_searchBox > img{
+        height: 15px;
+    }
+    .header_top_search_dropdown{
+        width: 200px;
+        top: 58px;
+        margin-left: 5px;
+        max-height: 124px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 31px;
+    }
+    .header_userImgContainer{
+        width : 22px;
+        height : 22px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 22px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    .header_top_box{
+        margin: 10px 5px 0 0;
+    }
+    .header_top_box > button, .header_top_box > button:hover{
+        font-size: 12px;
+    }
+    .header_logo_left{
+        margin-left: 3px;
+        font-size: 12px;
+    }
+    .header_logo_right{
+        margin-left: 1px;
+        font-size: 12px;
+    }
+    .header_bottom{
+        justify-content: center;
+    }
+    .header_top_searchBox{
+        width: 150px;
+        margin-right: 5px;
+        height: 25px;
+    }
+    .header_top_search_input{
+        width: 120px;
+        font-size: 12px;
+    }
+    .header_top_searchBox > img{
+        height: 10px;
+        margin-left: 5px;
+        
+    }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 15px;
+        padding: 3px 15px;
+        height: 25px;
+        width : 160px;
+    }
+    .header_top_searchBox > input{
+        width: 115px;
+        margin-right: 2px;
+        font-size: 12px;
+    }
+    .header_top_searchBox > img{
+        height: 12px;
+    }
+    .header_top_search_dropdown{
+        width: 150px;
+        top: 55px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 30px;
+    }
+    .header_userImgContainer{
+        width : 20px;
+        height : 20px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 20px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 300px){
+    .header_top_box{
+        margin: 5px 5px 0 0;
+    }
+    .header_top_box > button, .header_top_box > button:hover{
+        font-size: 10px;
+    }
+    .header_logo_left{
+        margin-left: 2px;
+        font-size: 10px;
+    }
+    .header_logo_right{
+        margin-left: 1px;
+        font-size: 10px;
+    }
+    .header_bottom{
+        justify-content: center;
+    }
+    .header_top_searchBox{
+        width: 150px;
+        margin-right: 2px;
+        height: 20px;
+    }
+    .header_top_search_input{
+        width: 100px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    .header_top_searchBox > img{
+        height: 8px;
+        margin-left: -70px;
+    }
+    .header_top_searchBox{
+        margin-top : 20px;
+        margin-right: 10px;
+        padding: 3px 15px;
+        height: 25px;
+        width : 150px;
+    }
+    .header_top_searchBox > input{
+        width: 110px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+    .header_top_searchBox > img{
+        height: 12px;
+    }
+    .header_top_search_dropdown{
+        width: 140px;
+        top: 50px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .header_userList{
+        height : 30px;
+    }
+    .header_userImgContainer{
+        width : 20px;
+        height : 20px;
+        margin : auto 10px;
+    }
+    .header_userImg{
+        height : 20px;
+    }
+    .header_userName{
+        margin : auto 10px;
+        margin-left : 5px;
+        font-size: 14px;
     }
 }

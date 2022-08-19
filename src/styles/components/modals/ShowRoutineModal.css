@@ -3,83 +3,51 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 5px 15px;
 }
 .show_routine_header > div{
     color: #1A1A1A;
     font-weight: bold;
-    font-size: 25px;
-}
-.show_routine_header > div > img{
-    height: 20px;
 }
 .show_routine_header > div > button{
     background-color: transparent;
     color: #2E61D7;
     border: 2px solid #2E61D7;
-    border-radius: 10px;
-    font-size: 18px;
     font-weight: 500;
-    margin-right: 20px;
-    padding: 3px 12px;
 }
 .show_routine_header > div > button:hover{
     background-color: #2E61D7;
     color: white;
 }
-.fork_img{
-    height: 20px;
-    margin: 0 6px 2px 0;
-}
 .show_routine_header > div > button:hover .fork_img{
     filter: brightness(2000%);
 }
-
 .show_routine_body{
-    padding: 15px;
-    max-height: 400px;
     overflow: scroll;
 }
-
-.exercise_box{
-    margin: 15px 0;
-}
-
 .exercise_title{
     border-bottom: 0.5px solid #dfdfdf;
-    padding: 10px 10px;
 }
 .exercise_title_en{
     color: #2E61D7;
     font-weight: 700;
-    font-size: 18px;
 }
 .exercise_title_kr{
     color: #4f4f4f;
     font-weight: 600;
-    font-size: 16px;
-    margin-top: -5px;
 }
-
 .exercise_column{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr;
-    padding: 5px 10px;
     font-weight: bold;
     border-bottom: 0.5px solid #dfdfdf;
     text-align: center;
 }
-
 .exercise_set_box{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr;
-    padding: 5px 10px;
     text-align: center;
 }
-
 .show_routine_footer{
-    padding-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,10 +56,224 @@
     border: none;
     background-color: #2E61D7;
     color: #E3F5FE;
-    height: 40px;
     width: 100%;
     font-weight: bold;
-    font-size: 18px;
-    border-radius: 7px;
-    margin: 0 15px
+}
+
+@media only screen and (min-width: 600px){
+    .show_routine_header{
+        height: 50px;
+        padding: 5px 15px;
+    }
+    .show_routine_header > div{
+        font-size: 25px;
+    }
+    .show_routine_header > div > img{
+        height: 20px;
+    }
+    .show_routine_header > div > button{
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 20px;
+        padding: 3px 12px;
+    }
+    .fork_img{
+        height: 20px;
+        margin: 0 6px 2px 0;
+    }
+    .show_routine_body{
+        padding: 15px;
+        max-height: 400px;
+    }
+    .exercise_box{
+        margin: 15px 0;
+    }
+    .exercise_title{
+        padding: 10px 10px;
+    }
+    .exercise_title_en{
+        font-size: 18px;
+    }
+    .exercise_title_kr{
+        font-size: 16px;
+        margin-top: -5px;
+    }
+    .exercise_column,  .exercise_set_box{
+        padding: 5px 10px;
+    }
+    .show_routine_footer{
+        padding-top: 20px;
+    }
+    .show_routine_footer > button{
+        height: 40px;
+        font-size: 18px;
+        border-radius: 7px;
+        margin: 0 15px
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 599px){
+    .show_routine_header{
+        height: 40px;
+        padding: 4px 12px;
+    }
+    .show_routine_header > div{
+        font-size: 23px;
+    }
+    .show_routine_header > div > img{
+        height: 18px;
+    }
+    .show_routine_header > div > button{
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-right: 17px;
+        padding: 2px 10px;
+    }
+    .fork_img{
+        height: 18px;
+        margin: 0 5px 2px 0;
+    }
+    .show_routine_body{
+        padding: 13px;
+        max-height: 350px;
+    }
+    .exercise_box{
+        margin: 12px 0;
+    }
+    .exercise_title{
+        padding: 8px;
+    }
+    .exercise_title_en{
+        font-size: 16px;
+    }
+    .exercise_title_kr{
+        font-size: 14px;
+        margin-top: -6px;
+    }
+    .exercise_column,  .exercise_set_box{
+        padding: 4px 8px;
+    }
+    .show_routine_footer{
+        padding-top: 15px;
+    }
+    .show_routine_footer > button{
+        height: 30px;
+        font-size: 16px;
+        border-radius: 6px;
+        margin: 0 12px
+    }
+    .exercise_set_box, .exercise_column{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 499px){
+    .show_routine_header{
+        height: 30px;
+        padding: 3px 10px;
+    }
+    .show_routine_header > div{
+        font-size: 20px;
+    }
+    .show_routine_header > div > img{
+        height: 16px;
+    }
+    .show_routine_header > div > button{
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 15px;
+        padding: 2px 8px;
+    }
+    .fork_img{
+        height: 16px;
+        margin: 0 4px 2px 0;
+    }
+    .show_routine_body{
+        padding: 5px;
+        max-height: 330px;
+    }
+    .exercise_box{
+        margin: 10px 0;
+    }
+    .exercise_title{
+        padding: 6px;
+    }
+    .exercise_title_en{
+        font-size: 14px;
+    }
+    .exercise_title_kr{
+        font-size: 12px;
+        margin-top: -5px;
+    }
+    .exercise_column,  .exercise_set_box{
+        padding: 3px 7px;
+    }
+    .show_routine_footer{
+        padding-top: 12px;
+    }
+    .show_routine_footer > button{
+        height: 25px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 0 10px
+    }
+    .exercise_set_box, .exercise_column{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 270px) and (max-width: 299px){
+    .show_routine_header{
+        height: 10px;
+        padding: 2px 8px;
+    }
+    .show_routine_header > div{
+        font-size: 16px;
+    }
+    .show_routine_header > div > img{
+        height: 14px;
+    }
+    .show_routine_header > div > button{
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 400;
+        margin-right: 12px;
+        padding: 1px 6px;
+    }
+    .fork_img{
+        height: 14px;
+        margin: 0 3px 1px 0;
+    }
+    .show_routine_body{
+        padding: 3px;
+        max-height: 300px;
+    }
+    .exercise_box{
+        margin: 8px 0;
+    }
+    .exercise_title{
+        padding: 4px;
+    }
+    .exercise_title_en{
+        font-size: 12px;
+    }
+    .exercise_title_kr{
+        font-size: 10px;
+        margin-top: -5px;
+    }
+    .exercise_column,  .exercise_set_box{
+        padding: 2px 6px;
+    }
+    .show_routine_footer{
+        padding-top: 10px;
+    }
+    .show_routine_footer > button{
+        height: 22px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin: 0 8px
+    }
+    .exercise_set_box, .exercise_column{
+        font-size: 10px;
+    }
 }
