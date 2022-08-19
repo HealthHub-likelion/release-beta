@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import SmallSliceContainer from '../components/background/SmallSliceBG';
 
-function RecordSession() {
+function RecordSession({userData, setUserData}) {
 
     const [myList,setMyList] = useState([]);
     const [consecutiveDay,setConsecutiveDay] = useState(0);
@@ -77,10 +77,18 @@ function RecordSession() {
                         latest(myList).map((e,i)=>{
                             return(
                                 <WaveElement key = {i}
+                                userData={userData} 
+                                setUserData={setUserData}
                                 record_img = {e.record_img}
                                 routine_name = {e.routine_name}
                                 create_time = {getDate(e.record_create_time)}
-                                comment = {e.record_comment}/>
+                                comment = {e.record_comment}
+                                member_nickname = {e.member_nickname}
+                                member_img = {e.member_img}
+                                isOpen={e.routine_isOpen}
+                                routineId = {e.routine_id}
+                                pre='wave'
+                                />
                             )
                         })
                     }

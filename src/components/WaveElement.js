@@ -4,9 +4,10 @@ import ElementProfileBox from './ElementProfileBox';
 import { useState } from 'react';
 import ShowRoutineModal from '../components/modals/ShowRoutineModal';
 
-const WaveElement = ({ record_img, create_time, routine_name, comment, member_nickname, member_img, userData, setUserData, isOpen, routineId }) => {
+const WaveElement = ({ record_img, create_time, routine_name, comment, member_nickname, member_img, userData, setUserData, isOpen, routineId, pre }) => {
     const [showRoutine, setShowRoutine] = useState(false);
     const [openComment, setOpenComment] = useState(false);
+    
 
     function handleComment(comment) {
         if (comment.length > 15) {
@@ -92,6 +93,7 @@ const WaveElement = ({ record_img, create_time, routine_name, comment, member_ni
                 userData = {userData}
                 setUserData = {setUserData}
                 clickRoutineId={routineId}
+                pre={pre}
             />
         </div>
     );

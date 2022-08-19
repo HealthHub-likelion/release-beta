@@ -58,6 +58,7 @@ const FeedsSession = ({userData, setUserData}) => {
                                 member_img = {e.member_img}
                                 isOpen={e.routine_isOpen}
                                 routineId = {e.routine_id}
+                                pre='wave'
                                 />
                             )
                         })

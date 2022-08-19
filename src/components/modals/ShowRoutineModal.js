@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import LoadingSpinner from '../LoadingSpinner';
 
-function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData }) {
+function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData, pre }) {
     const [load, setLoad] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [routineContent, setRoutineContent] = useState({});
@@ -133,7 +133,7 @@ function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData 
                         {showExercises()}
                     </div>
                     <div className='show_routine_footer'>
-                        {userData.isFollow === null &&
+                        {(userData.isFollow === null && pre !== 'wave' )&&
                             <button onClick={() => { editBtnClick() }}>편집</button>}
                     </div>
                 </Modal.Body>
