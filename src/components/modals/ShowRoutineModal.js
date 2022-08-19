@@ -3,8 +3,10 @@ import { Modal } from 'react-bootstrap';
 import EditRoutineModal from './EditRoutineModal';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import LoadingSpinner from '../LoadingSpinner';
 
 function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData }) {
+    const [load, setLoad] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [routineContent, setRoutineContent] = useState({});
     const [proceedEdit, setProceedEdit] = useState(false);
@@ -40,16 +42,22 @@ function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData 
 
     const forkRoutine = () => {
         if (window.confirm('루틴을 저장하시겠습니까?')) {
-            axios.post(`https://port-0-hh-backend-20f0025l6tng1mj.gksl1.cloudtype.app/exercise/routine/${routineContent['id']}/fork/`, {},
+            setLoad(true);
+            axios.post(`${process.env.REACT_APP_PROXY}/exercise/routine/${routineContent['id']}/fork/`, {},
                 {
                     headers: {
                         Authorization: localStorage.getItem('HH_token')
                     }
                 })
                 .then((res) => {
+                    alert(`${userData['name']}님의 루틴을 저장하였습니다.`);
+                    setLoad(false);
+                    onHide();
                 })
                 .catch((err) => {
                     // console.log(err);
+                    alert('중복된 루틴입니다!!');
+                    setLoad(false);
                 })
         }
     }
@@ -108,6 +116,8 @@ function ShowRoutineModal({ show, onHide, clickRoutineId, userData, setUserData 
                 centered
             >
                 <Modal.Body className='show_routine_content'>
+                    {load ? <LoadingSpinner load={load} /> : null}
+
                     <div className='show_routine_header'>
                         <div>
                             {routineContent.routineName}

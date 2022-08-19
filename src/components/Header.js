@@ -83,6 +83,21 @@ function Header({ Tab, username, userData }) {
         });
     })
 
+    useEffect(() => {
+        const container = document.querySelector('.header_top_search_dropdown2');
+        const serarchInput = document.querySelector('.header_top_search_input');
+        document.addEventListener('mouseup', function (e) {
+            if (container !== null) {
+                if (!container.contains(e.target)) {
+                    container.style.display = 'none';
+                }
+            }
+            if (serarchInput.contains(e.target)) {
+                container.style.display = 'block';
+            }
+        });
+    })
+
     const clickLogo = () => {
         if (localStorage.getItem('HH_name')) {
             navigate(`/${localStorage.getItem('HH_name')}`);
@@ -119,6 +134,13 @@ function Header({ Tab, username, userData }) {
                                 })
                             }
                         </div>}
+                        {
+                            showDropDown&&userList.length == 0 ? 
+                            <div className='header_top_search_dropdown2'>
+                                <div className='header_nouser_alert'>검색 결과가 없습니다..</div>
+                            </div>
+                            :null
+                        }
                     {
                         localStorage.getItem('HH_token') && localStorage.getItem('HH_name') && localStorage.getItem('HH_member_id')
                             ? <button onClick={() => { moveIndex('logout') }} >LogOut</button>

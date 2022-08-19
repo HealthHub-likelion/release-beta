@@ -10,6 +10,9 @@
     flex-grow: 1;
     overflow: scroll;
 }
+.create_record_body::-webkit-scrollbar{
+    display: none;
+}
 .create_record_footer{
     display: grid;
     grid-template-columns: 1fr 1fr;

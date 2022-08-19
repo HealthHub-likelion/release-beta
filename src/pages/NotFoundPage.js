@@ -79,6 +79,21 @@ const NotFoundPage = () => {
         });
     })
 
+    useEffect(() => {
+        const container = document.querySelector('.notFound_top_search_dropdown2');
+        const serarchInput = document.querySelector('.notFound_top_search_input');
+        document.addEventListener('mouseup', function (e) {
+            if (container !== null) {
+                if (!container.contains(e.target)) {
+                    container.style.display = 'none';
+                }
+            }
+            if (serarchInput.contains(e.target)) {
+                container.style.display = 'block';
+            }
+        });
+    })
+
     return (
         <ProfileContainer>
             <div className="NotFoundPage">
@@ -108,6 +123,13 @@ const NotFoundPage = () => {
                                 })
                             }
                         </div>
+                        }
+                        {
+                            showDropDown&&userList.length == 0 ? 
+                            <div className='notFound_top_search_dropdown2'>
+                                <div className='notFound_nouser_alert'>검색 결과가 없습니다..</div>
+                            </div>
+                            :null
                         }
                         <div className='notFound_box' onClick={()=>{clickLogo()}}>
                             <div className='notFound_logo_left'>Health</div>

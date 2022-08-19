@@ -34,6 +34,9 @@
 .create_routine_body{
     overflow: scroll;
 }
+.create_routine_body::-webkit-scrollbar{
+    display: none;
+}
 .create_add_exercise{
     background-color: transparent;
     width: 100%;

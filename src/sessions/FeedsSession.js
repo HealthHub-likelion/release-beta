@@ -4,7 +4,7 @@ import '../styles/sessions/FeedsSession.css'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-const FeedsSession = () => {
+const FeedsSession = ({userData, setUserData}) => {
 
     const [feed_myList,setMyList] = useState([]);
     const token = localStorage.getItem('HH_token');
@@ -45,14 +45,20 @@ const FeedsSession = () => {
         <div className='FeedsSession'>
             {
                         latest(feed_myList).map((e,i)=>{
+                            console.log(e);
                             return(
-                                <WaveElement key = {i}
+                                <WaveElement
+                                userData={userData} 
+                                setUserData={setUserData}
+                                key = {i}
                                 record_img = {e.record_img}
                                 routine_name = {e.routine_name}
                                 create_time = {getDate(e.record_create_time)}
                                 comment = {e.record_comment}
                                 member_nickname = {e.member_nickname}
                                 member_img = {e.member_img}
+                                isOpen={e.routine_isOpen}
+                                routineId = {e.routine_id}
                                 />
                             )
                         })

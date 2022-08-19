@@ -21,6 +21,9 @@
     width : 100%;
     overflow: scroll;
 }
+.wavesWindow_content::-webkit-scrollbar{
+    display: none;
+}
 .wavesWindow_header_title{
     color : #66B3F9;
     font-weight: bold;

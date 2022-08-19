@@ -70,6 +70,21 @@ const SearchUser = () => {
         });
     })
 
+    useEffect(() => {
+        const container = document.querySelector('.SearchUser_top_search_dropdown2');
+        const serarchInput = document.querySelector('.SearchUser_top_search_input');
+        document.addEventListener('mouseup', function (e) {
+            if (container !== null) {
+                if (!container.contains(e.target)) {
+                    container.style.display = 'none';
+                }
+            }
+            if (serarchInput.contains(e.target)) {
+                container.style.display = 'block';
+            }
+        });
+    })
+    
     return (
         <div className='SearchUser_top_box'>
             <div className='SearchUser_top_searchBox'>
@@ -96,6 +111,14 @@ const SearchUser = () => {
                         })
                     }
                 </div>}
+
+            {
+                showDropDown&&userList.length == 0 ? 
+                <div className='SearchUser_top_search_dropdown2'>
+                    <div className='SearchUser_nouser_alert'>검색 결과가 없습니다..</div>
+                </div>
+                :null
+            }
         </div>
     );
 };

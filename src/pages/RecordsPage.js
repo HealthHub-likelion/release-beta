@@ -20,7 +20,7 @@ function RecordsPage() {
             <ProfileSession username={username} userData={userData}/>
           </div>
           <div className="recordspage_RecordsSession">
-            <RecordSession/>
+            <RecordSession userData={userData} setUserData={setUserData}/>
           </div>
         </div>
 

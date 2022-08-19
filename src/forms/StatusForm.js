@@ -32,6 +32,7 @@ function StatusForm() {
             localStorage.removeItem('HH_member_id');
             localStorage.removeItem('HH_name');
             navigate(`/`);
+            alert('탈퇴되었습니다.');
         }
     }
 

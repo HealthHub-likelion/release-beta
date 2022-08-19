@@ -41,6 +41,9 @@
 .edit_routine_body{
     overflow: scroll;
 }
+.edit_routine_body::-webkit-scrollbar{
+    display: none;
+}
 .edit_exercise_top{
     display: flex;
     flex-direction: row;

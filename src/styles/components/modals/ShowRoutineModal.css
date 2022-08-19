@@ -24,6 +24,9 @@
 .show_routine_body{
     overflow: scroll;
 }
+.show_routine_body::-webkit-scrollbar{
+    display: none;
+}
 .exercise_title{
     border-bottom: 0.5px solid #dfdfdf;
 }

@@ -45,6 +45,13 @@
     z-index: 2;
     color : white;
 }
+.notFound_top_search_dropdown2{
+    position: absolute;
+    border-radius: 3px;
+    background-color: #10273B;
+    z-index: 2;
+    color : white;
+}
 .notFound_box{
     display: flex;
     flex-direction: row;
@@ -113,6 +120,13 @@
         max-height: 160px;
         overflow-y: auto;
     }
+    .notFound_top_search_dropdown2{
+        width: 248px;
+        top: 51px;
+        margin-left: 5px;
+        max-height: 160px;
+        overflow-y: auto;
+    }
     .notFound_userList{
         height : 40px;
     }
@@ -137,6 +151,10 @@
         margin-left: 3px;
         font-size: 18px;
     }
+    .notFound_nouser_alert{
+        font-size : 14px;
+        margin : 8px 15px;
+    }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1200px){
@@ -156,6 +174,13 @@
         height: 15px;
     }
     .notFound_top_search_dropdown{
+        width: 240px;
+        top: 52px;
+        margin-left: 5px;
+        max-height: 140px;
+        overflow-y: auto;
+    }
+    .notFound_top_search_dropdown2{
         width: 240px;
         top: 52px;
         margin-left: 5px;
@@ -189,6 +214,10 @@
         margin-left: 3px;
         font-size: 18px;
     }
+    .notFound_nouser_alert{
+        font-size : 13.5px;
+        margin : 8px 15px;
+    }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px){
     .notFound_top_searchBox{
@@ -207,6 +236,13 @@
         height: 15px;
     }
     .notFound_top_search_dropdown{
+        width: 230px;
+        top: 51px;
+        margin-left: 5px;
+        max-height: 132px;
+        overflow-y: auto;
+    }
+    .notFound_top_search_dropdown2{
         width: 230px;
         top: 51px;
         margin-left: 5px;
@@ -240,6 +276,10 @@
         margin-left: 3px;
         font-size: 16px;
     }
+    .notFound_nouser_alert{
+        font-size : 13px;
+        margin : 8px 15px;
+    }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 600px){
@@ -259,6 +299,13 @@
         height: 15px;
     }
     .notFound_top_search_dropdown{
+        width: 200px;
+        top:49px;
+        margin-left: 5px;
+        max-height: 124px;
+        overflow-y: auto;
+    }
+    .notFound_top_search_dropdown2{
         width: 200px;
         top:49px;
         margin-left: 5px;
@@ -292,6 +339,10 @@
         margin-left: 3px;
         font-size: 15px;
     }
+    .notFound_nouser_alert{
+        font-size : 12px;
+        margin : 6px 15px;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 450px){
@@ -311,6 +362,13 @@
         height: 12px;
     }
     .notFound_top_search_dropdown{
+        width: 150px;
+        top: 46px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .notFound_top_search_dropdown2{
         width: 150px;
         top: 46px;
         margin-left: 5px;
@@ -353,6 +411,10 @@
         font-size: 18px;
         text-align: center;
     }
+    .notFound_nouser_alert{
+        font-size : 10px;
+        margin : 5px 15px;
+    }
 }
 
 @media only screen and (min-width: 270px) and (max-width: 300px){
@@ -372,6 +434,13 @@
         height: 12px;
     }
     .notFound_top_search_dropdown{
+        width: 140px;
+        top: 46px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+    .notFound_top_search_dropdown2{
         width: 140px;
         top: 46px;
         margin-left: 5px;
@@ -413,5 +482,9 @@
     .NotFound_alert{
         font-size: 14px;
         text-align: center;
+    }
+    .notFound_nouser_alert{
+        font-size : 8px;
+        margin : 5px 15px;
     }
 }

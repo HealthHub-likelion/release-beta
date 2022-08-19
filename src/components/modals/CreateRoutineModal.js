@@ -86,6 +86,7 @@ function CreateRoutineModal({show, onHide, createState, setCreateState, setProce
         })
         .then((res)=>{
             window.location.reload();
+            alert("생성되었습니다.")
             onHide();
         })
         .catch((err)=>{

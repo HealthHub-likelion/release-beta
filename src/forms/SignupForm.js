@@ -82,10 +82,11 @@ function SignupForm() {
             })
                 .then((res) => {
                     // console.log(res);
-                    console.log('가능한 닉네임입니다.')
+                    alert('가능한 닉네임입니다!');
                 })
                 .catch((err) => {
                     // console.log(err);
+                    alert('중복된 닉네임입니다.');
                 })
         }
         else {
@@ -118,10 +119,11 @@ function SignupForm() {
             }).
                 then((res) => {
                     // console.log(res);
-                    console.log('가능한 이메일입니다.');
+                    alert('가능한 이메일입니다!');
                 })
                 .catch((err) => {
                     // console.log(err);
+                    alert('중복된 이메일입니다.');
                 })
         }
         else {
@@ -159,6 +161,7 @@ function SignupForm() {
                 })
                 .catch((err) => {
                     // console.log(err);
+                    alert('회원가입 실패!!');
                 })
         }
         else {

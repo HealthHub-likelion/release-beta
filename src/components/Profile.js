@@ -76,24 +76,26 @@ function Profile({ username, Tab, showFollowers, setShowFollowers, userData, set
       <img src={`${process.env.REACT_APP_IMAGE}${userData['img']}`} alt='프로필 이미지' />
       
       <div className='profile_userstate_box'>
-        <div className='profile_username'>{username}</div>
-        {userData.isFollow !== null && (userData.isFollow
-          ? <button className='profileBtn_unfollow' onClick={() => { userUnFollow() }}>unfollow</button>
-          : <button className='profileBtn_following' onClick={() => { userFollowing() }}>following</button>)
-        }
+        <div>
+          <div className='profile_username'>{username}</div>
+            {userData.isFollow !== null && (userData.isFollow
+              ? <button className='profileBtn_unfollow' onClick={() => { userUnFollow() }}>unfollow</button>
+              : <button className='profileBtn_following' onClick={() => { userFollowing() }}>follow</button>)
+            }
+          </div>
+        {Tab === 'Follows'
+            ?
+            <div className='profile_button_group'>
+              <button className={setFollowersClass()} onClick={() => { setShowFollowers(true) }}>{userData.followerCount} followers</button>
+              / <button className={setFollowingClass()} onClick={() => { setShowFollowers(false) }}>{userData.followingCount} following</button>
+            </div>
+            : selectFollowState()}
       </div>
-      {Tab === 'Follows'
-        ?
-        <div className='profile_button_group'>
-          <button className={setFollowersClass()} onClick={() => { setShowFollowers(true) }}>{userData.followerCount} followers</button>
-          / <button className={setFollowingClass()} onClick={() => { setShowFollowers(false) }}>{userData.followingCount} following</button>
-        </div>
-        : selectFollowState()}
+
       {userData.isFollow === null &&
         <div className='profile_add_record_box'>
           <button className='profile_add_record' onClick={() => { setShowAddRecord(true) }}>Add Record</button>
-        </div>
-      }
+        </div>}
 
       <CreateRecordModal
         show={showAddRecord}

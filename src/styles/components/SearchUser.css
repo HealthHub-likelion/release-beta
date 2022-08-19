@@ -23,6 +23,20 @@
     z-index: 2;
     color : white;
 }
+.SearchUser_top_search_dropdown2{
+    position: absolute;
+    border-radius: 3px;
+    background-color: #10273B;
+    z-index: 2;
+    color : white;
+}
+.SearchUser_top_search_dropdown_nouser{
+    position: absolute;
+    border-radius: 3px;
+    background-color: #10273B;
+    z-index: 2;
+    color : white;
+}
 .SearchUser_userList{
     display : flex;
     border-bottom: 2px solid #264056;
@@ -57,6 +71,13 @@
         max-height: 160px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 248px;
+        top: 61px;
+        margin-left: 5px;
+        max-height: 160px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 40px;
     }
@@ -72,6 +93,10 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 17px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 14px;
+        margin : 8px 15px;
     }
 }
 
@@ -98,6 +123,13 @@
         max-height: 140px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 240px;
+        top: 61px;
+        margin-left: 5px;
+        max-height: 140px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 35px;
     }
@@ -113,6 +145,10 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 17px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 13.5px;
+        margin : 8px 15px;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 900px){
@@ -138,6 +174,13 @@
         max-height: 132px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 230px;
+        top: 59px;
+        margin-left: 5px;
+        max-height: 132px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 33px;
     }
@@ -153,6 +196,10 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 16px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 13px;
+        margin : 8px 15px;
     }
 }
 
@@ -179,6 +226,13 @@
         max-height: 124px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 200px;
+        top: 58px;
+        margin-left: 5px;
+        max-height: 124px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 31px;
     }
@@ -194,6 +248,10 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 15px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 12px;
+        margin : 6px 15px;
     }
 }
 
@@ -220,6 +278,13 @@
         max-height: 120px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 150px;
+        top: 55px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 30px;
     }
@@ -235,6 +300,10 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 14px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 10px;
+        margin : 5px 15px;
     }
 }
 
@@ -261,6 +330,13 @@
         max-height: 120px;
         overflow-y: auto;
     }
+    .SearchUser_top_search_dropdown2{
+        width: 140px;
+        top: 55px;
+        margin-left: 5px;
+        max-height: 120px;
+        overflow-y: auto;
+    }
     .SearchUser_userList{
         height : 30px;
     }
@@ -276,5 +352,9 @@
         margin : auto 10px;
         margin-left : 5px;
         font-size: 14px;
+    }
+    .SearchUser_nouser_alert{
+        font-size : 8px;
+        margin : 5px 15px;
     }
 }

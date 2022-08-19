@@ -20,7 +20,7 @@ function FeedsPage() {
             <ProfileSession username={username} userData={userData}/>
           </div>
           <div className="feedspage_FeedsSession">
-            <FeedsSession/>
+            <FeedsSession userData={userData} setUserData={setUserData}/>
           </div>
         </div>
 
