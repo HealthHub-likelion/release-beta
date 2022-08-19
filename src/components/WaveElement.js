@@ -7,7 +7,7 @@ import ShowRoutineModal from '../components/modals/ShowRoutineModal';
 const WaveElement = ({ record_img, create_time, routine_name, comment, member_nickname, member_img, userData, setUserData, isOpen, routineId, pre }) => {
     const [showRoutine, setShowRoutine] = useState(false);
     const [openComment, setOpenComment] = useState(false);
-    
+
 
     function handleComment(comment) {
         if (comment.length > 15) {
@@ -41,8 +41,8 @@ const WaveElement = ({ record_img, create_time, routine_name, comment, member_ni
         setOpenComment(false);
     }
 
-    const showModal = () =>{
-        if(isOpen || member_nickname===localStorage.getItem('HH_name')){
+    const showModal = () => {
+        if (isOpen || member_nickname === localStorage.getItem('HH_name')) {
             setShowRoutine(true);
             return;
         }
@@ -61,8 +61,8 @@ const WaveElement = ({ record_img, create_time, routine_name, comment, member_ni
                             alt="records_Img" />
                     </div> : null
                 }
-                <div className='waveElement_content'>
-                    <div className='waveElement_content_fistLine' onClick={()=>{showModal()}}>
+                <div className='waveElement_content' onClick={() => { showModal() }}>
+                    <div className='waveElement_content_fistLine'>
                         <div className='waveElement_today'>Today's routine</div>
                         <div className='waveElement_date'>{create_time}</div>
                     </div>
@@ -89,9 +89,9 @@ const WaveElement = ({ record_img, create_time, routine_name, comment, member_ni
 
             <ShowRoutineModal
                 show={showRoutine}
-                onHide={()=>{setShowRoutine(false)}}
-                userData = {userData}
-                setUserData = {setUserData}
+                onHide={() => { setShowRoutine(false) }}
+                userData={userData}
+                setUserData={setUserData}
                 clickRoutineId={routineId}
                 pre={pre}
             />
