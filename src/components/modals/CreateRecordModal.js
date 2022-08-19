@@ -125,7 +125,7 @@ function CreateRecordModal({ show, onHide, userData }) {
                 formData.append('img', addRecordData['img'][0]);
             }
 
-            setLoad(true);
+            
             axios.post(`${process.env.REACT_APP_PROXY}/record/`, {
                 start_time: setStartTime,
                 end_time: setEndTime,
@@ -137,6 +137,7 @@ function CreateRecordModal({ show, onHide, userData }) {
                     Authorization: localStorage.getItem('HH_token')
                 }
             }).then((res) => {
+                setLoad(true);
                 if (res.data.record_id && addRecordData['img']) {
                     axios.post(`${process.env.REACT_APP_IMAGE}/record/${res.data.record_id}/`, formData, {
                         headers: {
@@ -144,9 +145,8 @@ function CreateRecordModal({ show, onHide, userData }) {
                         }
                     }).then((res) => {
                         // console.log(res);
-                        setLoad(false);
-                        onHide();
                         window.location.reload();
+                        onHide();
                     }).catch((err) => {
                         // console.log(err);
                         alert('이미지 등록 실패!!');
