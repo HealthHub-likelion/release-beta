@@ -43,26 +43,27 @@ const FeedsSession = ({userData, setUserData}) => {
 
     return (
         <div className='FeedsSession'>
-            {
-                        latest(feed_myList).map((e,i)=>{
-                            return(
-                                <WaveElement
-                                userData={userData} 
-                                setUserData={setUserData}
-                                key = {i}
-                                record_img = {e.record_img}
-                                routine_name = {e.routine_name}
-                                create_time = {getDate(e.record_create_time)}
-                                comment = {e.record_comment}
-                                member_nickname = {e.member_nickname}
-                                member_img = {e.member_img}
-                                isOpen={e.routine_isOpen}
-                                routineId = {e.routine_id}
-                                pre='wave'
-                                />
-                            )
-                        })
-                    }
+            {feed_myList.length>0?
+                latest(feed_myList).map((e,i)=>{
+                    return(
+                        <WaveElement
+                        userData={userData} 
+                        setUserData={setUserData}
+                        key = {i}
+                        record_img = {e.record_img}
+                        routine_name = {e.routine_name}
+                        create_time = {getDate(e.record_create_time)}
+                        comment = {e.record_comment}
+                        member_nickname = {e.member_nickname}
+                        member_img = {e.member_img}
+                        isOpen={e.routine_isOpen}
+                        routineId = {e.routine_id}
+                        pre='wave'
+                        />
+                    )
+                })
+                :<div className='feed_empty'>기록을 공유할 친구를 찾아보세요!</div>
+            }
         </div>
     );
 };

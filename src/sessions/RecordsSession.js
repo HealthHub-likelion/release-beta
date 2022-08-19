@@ -74,7 +74,7 @@ function RecordSession({userData, setUserData}) {
                     <div className = 'wavesWindow_header_recordsCnt'>{myList.length} records</div>
                 </div>
                 <div className = 'wavesWindow_content'>
-                    {
+                    {myList.length > 0?
                         latest(myList).map((e,i)=>{
                             return(
                                 <WaveElement key = {i}
@@ -91,7 +91,8 @@ function RecordSession({userData, setUserData}) {
                                 pre='wave'
                                 />
                             )
-                        })
+                        }):
+                        <div className='record_empty'>오늘은 어떤 운동을하셨나요?</div>
                     }
                 </div>
             </div>
